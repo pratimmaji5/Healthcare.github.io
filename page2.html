@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+  <title>About WHO</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 0px;
+  background: skyblue;
+}
+
+/*back to top button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+/*social media logo*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 66px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #00b300;
+  color: white;
+  }
+
+
+.fa-telegram {
+  background: #007acc;
+  color: white;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 80px;
+  font-family: 'Sofia';
+  text-align: center;
+  background: #1abc9c;
+}
+
+.header h1 {
+  font-size: 50px;
+  
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 90%;
+  background-color: white;
+  
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 10%;
+  background-color: skyblue;
+  padding-left: 0px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card2 {
+  
+  padding: 150px;
+  margin-top: 0px;
+  background color:skyblue;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Footer */
+.footer {
+  padding: 40px;
+  text-align: center;
+  background: #29293d;
+  margin-top: 0px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="header">
+  <h1>Healthcare</h1>
+  <h2>We Care For Your Health Every Moment During This Pandemic</h2>
+</div>
+
+<div class="topnav">
+<table border="0" width="100%">
+
+  <th width="11.11%"><a href="main.html">Home</a></th>
+  <th width="11.11%"><a href="page1.html">About Health and Hygiene</a></th>
+  <th width="11.11%"><a href="page2.html">About WHO</a></th>
+  <th width="11.11%"><a href="page3.html">About COVID-19</a></th>
+  <th width="11.11%"><a href="page4.html">WHO guidelines</a></th>
+  <th width="11.11%"><a href="page5.html">Health and hygiene chart</a></th>
+  <th width="11.11%"><a href="page6.html">Flow chart</a></th>
+  <th width="11.11%"><a href="https://1drv.ms/p/s!AoI5pUtfcAkRglkzoLyWFjq_JCkK">See ppt</a></th>
+  <th width="11.11%"><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline no.</a></th>
+
+</table>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+    
+<h1  style="font-family: verdana" align="center">ABOUT WHO</h1><hr>
+<tr>
+<td><img src="who5.jpg" width="100%" height="500px"></td>
+
+</tr></div>
+
+<div class="card2">
+<td align="left"><h2>Better health for everyone, everywhere</h2>
+<p><b>We are building a better, healthier future for people all over the world.</b></p>
+
+<P><b>Working with 194 Member States, across six regions, and from more than 150 offices, WHO staff are united in a shared commitment to achieve better health for everyone, everywhere.</b></P>
+
+<P><b>Together we strive to combat diseases – communicable diseases like influenza and HIV, and noncommunicable diseases like cancer and heart disease.</b></P>
+
+<p><b>We help mothers and children survive and thrive so they can look forward to a healthy old age. We ensure the safety of the air people breathe, the food they eat, the water they drink – and the medicines and vaccines they need.</b></p></td></div>
+<td><img src="who 3.jpg" width="100%" height="500px"></td>
+
+</tr>
+
+<div class="card2">
+<tr>
+  <h2>Introduction about WHO(WORLD HEALTH ORGANIZATION) :</h2>
+  <p><b>The World Health Organization (WHO) is a specialized agency of the United Nations responsible for international public health.The WHO Constitution, which establishes the agency's governing structure and principles, states its main objective as "the attainment by all peoples of the highest possible level of health."It is headquartered in Geneva, Switzerland, with six semi-autonomous regional offices and 150 field offices worldwide.</b></p>
+
+
+<p><b>HEADS :</b><a href="https://en.wikipedia.org/wiki/Tedros_Adhanom"> Tedros Adhanom  </a>,<a href="https://en.wikipedia.org/wiki/Soumya_Swaminathan_(scientist)">Soumya Swaminathan  </a>,<a href="https://en.wikipedia.org/wiki/Jane_Ellison">Jane Ellison  </a>,<a href="https://en.wikipedia.org/wiki/Peter_Salama">Peter Salama </a>.</p>
+
+<p><b>HEADQUARTERS :</b><a href="https://en.wikipedia.org/wiki/Geneva"> Geneva ,Switzerland</a>.</p>
+
+<p><b>FOUNDED :</b> 7 April, 1948</p>
+
+<p><b>PARENT ORGANIZATION :</b> <a href="https://en.wikipedia.org/wiki/United_Nations_Economic_and_Social_Council">United Nations Economic and Social Council</a></p>
+
+<p><b>The WHO was established in 7 April 1948, which is commemorated as World Health Day.The first meeting of the World Health Assembly (WHA), the agency's governing body, took place on 24 July 1948. The WHO incorporated the assets, personnel, and duties of the League of Nations' Health Organisation and the Office International d'Hygiène Publique, including the International Classification of Diseases.Its work began in earnest in 1951 following a significant infusion of financial and technical resources.</b></p>
+
+<p><b>The WHO's broad mandate includes advocating for universal healthcare, monitoring public health risks, coordinating responses to health emergencies, and promoting human health and well being.It provides technical assistance to countries, sets international health standards and guidelines, and collects data on global health issues through the World Health Survey. Its flagship publication, the World Health Report, provides expert assessments of global health topics and health statistics on all nations.The WHO also serves as a forum for summits and discussions on health issues.</b></p>
+
+<p><b>The WHO has played a leading role in several public health achievements, most notably the eradication of smallpox, the near-eradication of polio, and the development of an Ebola vaccine. Its current priorities include communicable diseases, particularly HIV/AIDS, Ebola, malaria and tuberculosis; non-communicable diseases such as heart disease and cancer; healthy diet, nutrition, and food security; occupational health; and substance abuse.</b></p>
+
+<p><b>The WHA, composed of representatives from all 194 member states, serves as the agency's supreme decision-making body. It also elects and advises an Executive Board made up of 34 health specialists. The WHA convenes annually and is responsible for selecting the Director-General, setting goals and priorities, and approving the WHO's budget and activities. The current Director-General is Tedros Adhanom, former Health Minister and Foreign Minister of Ethiopia, who began his five-year term on 1 July 2017.</b></p>
+
+<P><b>The WHO relies on assessed and voluntary contributions from member states and private donors for funding. As of 2018, it has a budget of over $4.2 billion, most of which comes from voluntary contributions from member states.The agency is part of the United Nations Sustainable Development Group.</b></p>
+ <h2 align="center"> <a href="https://en.wikipedia.org/wiki/World_Health_Organization">click here</a> to know more about WHO.</h2>
+ <h2 align="center"> <a href="https://www.who.int/">click here</a> to visit WHO official website.</h2></P></tr></td></div></div>
+
+
+<div class="rightcolumn">
+    <div class="card">
+      <h2 style="font-family: verdana">Helpdesk</h2>
+      <a href="https://www.facebook.com/MyGovIndia/" class="fa fa-facebook"></a>
+
+</div></div>
+
+<div class="rightcolumn">
+    <div class="card">
+    <a href="https://twitter.com/mygovindia" class="fa fa-twitter"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+    <div class="card">
+    <a href="https://www.mygov.in" class="fa fa-google"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+    <div class="card">
+    <a href="https://www.linkedin.com/company/mygov-india/" class="fa fa-linkedin"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+  <div class="card">
+    
+    <a href="https://www.youtube.com/mygovindia" class="fa fa-youtube"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+    <div class="card">
+    <a href="https://www.instagram.com/mygovindia/" class="fa fa-instagram"></a>
+
+ </div></div>
+
+<div class="rightcolumn">
+    <div class="card">
+    <a href="https://api.whatsapp.com/send?phone=919013353535&text=Hi&source=&data=&app_absent=" class="fa fa-whatsapp"></a>
+
+ </div></div>
+
+
+<div class="rightcolumn">
+    <div class="card">
+    <a href="https://t.me/MyGovCoronaNewsdesk" class="fa fa-telegram"></a>
+
+ </div></div></div></body>
+
+
+
+<img src="banner.jpg" style="width: 1503px;height: 500px">
+
+<div class="footer">
+  <h4><font color="#b3b3cc">Website designed for healthy activities</font></h4>
+  <h5><font color="#b3b3cc">Develop and Designed by Pratim Maji and Arijit Mitra</font></h5>
+  <h4><font color="#b3b3cc">Language-English</font></h4>
+  <h4><font color="#b3b3cc"><a href="mailto:healthcaretint@gmail.com">E-mail Support-healthcaretint@gmail.com</a> </font></h4>
+  <h4><font color="#b3b3cc">You can individually contact with the developers by E-mail</font></h4>
+  <h4><font color="#b3b3cc"><a href="mailto:mitrahul008@gmail.com">Arijit Mitra-mitrarahul008@gmail.com </a> </font></h4>
+  <h4><font color="#b3b3cc"><a href="mailto:pratimmaji2@gmail.com">Pratim Maji-pratimmaji2@gmail.com</a> </font></h4>
+  <h3><font color="#b3b3cc">THANKS FOR VISITING OUR WEBSITE</font></h3>
+</div>

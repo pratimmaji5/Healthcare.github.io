@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+  <title>About health and hygiene</title>
+<style>
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 0px;
+  background: skyblue;
+}
+
+/*back to top button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*social media logo*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 66px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #00b300;
+  color: white;
+  }
+
+
+.fa-telegram {
+  background: #007acc;
+  color: white;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 80px;
+  font-family: 'Sofia';
+  text-align: center;
+  background: #1abc9c;
+}
+
+.header h1 {
+  font-size: 50px;
+  
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 90%;
+  background-color: white;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 10%;
+  background-color: skyblue;
+  padding-left: 0px;
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+  
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card2 {
+  
+  padding: 200px;
+  margin-top: 0px;
+  background color:skyblue;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Footer */
+.footer {
+  padding: 40px;
+  text-align: center;
+  background: #29293d;
+  margin-top: 0px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="header">
+  <h1>Healthcare</h1>
+  <h2>We Care For Your Health Every Moment During This Pandemic</h2>
+</div>
+
+<div class="topnav">
+<table border="0" width="100%">
+
+  <th width="11.11%"><a href="main.html">Home</a></th>
+  <th width="11.11%"><a href="page1.html">About Health and Hygiene</a></th>
+  <th width="11.11%"><a href="page2.html">About WHO</a></th>
+  <th width="11.11%"><a href="page3.html">About COVID-19</a></th>
+  <th width="11.11%"><a href="page4.html">WHO guidelines</a></th>
+  <th width="11.11%"><a href="page5.html">Health and hygiene chart</a></th>
+  <th width="11.11%"><a href="page6.html">Flow chart</a></th>
+  <th width="11.11%"><a href="https://1drv.ms/p/s!AoI5pUtfcAkRglkzoLyWFjq_JCkK">See ppt</a></th>
+  <th width="11.11%"><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline no.</a></th>
+
+</table>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card2">
+    
+<h1 style="font-family: verdana" align="center">WHAT IS HEALTH & HYGIENE</h1><hr>
+<h3 style="font-family: verdana">A healthy life is a dream of each individual. World Health Organization (WHO) declared April 7th as World Health Day.This is celebrated with the goal of creating awareness among each individual.For being healthy we need to know the actual meaning of health and hygiene. Let us discuss more on health and hygiene.</h3>
+
+<h3 style="font-family: verdana">According to WHO, health is“a complete state of physical, mental and social well-being, and not merely the absence of disease or infirmity.” As per the definition, a person cannot be said to be healthy merely by a disease-free condition.He/ she should be physically as well as mentally healthy. This demands a hygienic condition.Health and hygiene are two correlated terms.</h3><hr></div>
+<p><img src="health4.png" width="100%" height="500px"></p>
+
+<div class="card2"><hr>
+<h2 align="center ">Tips for maintaining your proper hygiene :</h2><br>
+  <h3>Personal Hygiene Habit # 1</h3>
+<p><b>Shower daily
+Rinse out all the soap
+Make sure your intimates are not tight; cotton is a preferred material
+It is recommended that after motions,you must wash up or wipe from front to back.</b></p><hr>
+<h3>Personal Hygiene Habit # 2</h3>
+<p><b>For Food storage
+Store and prepare raw meat, poultry, and seafood away from other foods
+Store food in the fridge at 5°C/41°F, do not overfill and allow cold air to circulate
+Prevent raw food juices from dripping onto other foods.</b></p><hr>
+<h3>Personal Hygiene Habit # 3</h3>
+<p><b>While preparing your food
+Cut meat and vegetables with separate knives and chopping/cutting boards
+Soak, scrape, brush, scald, peel or wash all fruit, salad and vegetables
+Do not wash raw meat in the sink prior to cooking as this spreads germs around the sink area. This is also not necessary as proper cooking of the meat will destroy any harmful bacteria.</b></p><hr>
+<h3>Personal Hygiene Habit # 4</h3>
+<p><b>Peeing etiquettes
+Don't hold it in
+Stay hydrated
+Relax when you pee
+Wipe from front to back.</b></p><hr>
+<h3>Personal Hygiene Habit # 5</h3>
+<p><b>Fighting bad breath
+Drink plenty of water.
+Brush and floss regularly.
+Treat any existing oral diseases.
+Eat crunchy fruits and vegetables.
+Cut out coffee.
+Chew sugarless gum.
+Eat yogurt
+Get your vitamins. a, but can also help prevent two other causes of bad breath—gum disease and gingivitis.
+Avoid tobacco products.</b></p><hr>
+<h3>Personal Hygiene Habit# 6</h3>
+<p><b>Cleaning and disinfection of office work spaces.
+Viruses are breeding round the clock, especially when it comes to hard surfaces, like office desks, office floors and so on.
+Make sure your office administration staff routinely cleans door handles, countertops, keyboards and doorknobs with anti-bacterial solution to remove the germs.</b></p><hr>
+<h3>Personal Hygiene Habit# 7</h3>
+<p><b>Go for an alcohol-based sanitizer.
+Clean your hands every now and then by using hand sanitizers. This is because alcohol is a drying agent and kills all the viruses and bacterias immediately.
+However, please note alcohol is liable to make your skin dry, thus always go for a branded alcohol-based fragrance-free hand sanitizer, which has a good amount of moisturizer in it.</b></p><hr>
+<h3>Personal Hygiene Habit# 8</h3>
+<p><b>Office pantry etiquette.
+The office pantry is a very tricky place – you can’t avoid it, but nor can you be friends with it. The best practice is to carry your own coffee and tea mugs and wash them at least twice a day. If you are not so sure about your office hygiene, get your own tissue roll from home and store your office snacks in a clean and safe drawer.</b></p><hr>
+<h3>Personal Hygiene Habit# 9</h3>
+<p><b>Makeup hygiene
+Eyebrow pencil hygiene is a must. Always ensure that you clean your eyebrow pencil with a wet tissue before usage in order to get rid of bacterial residue.
+Wash your makeup brush and powder puffs on a weekly basis with a mild baby shampoo for best and safe usage. Dry the washed makeup product by using a clean towel.
+Never use your fingers to apply makeup, unless and until a profesional artist does that for you. But, if you must use your fingers, then make sure they're clean and that you use just the ring finger as it has the lightest stroke.</b></p><hr>
+<h3>Personal Hygiene Habit# 10</h3>
+<p><b>Brushing hygiene
+Brush your teeth twice a day for at least 3-5 minutes. Make sure you do not put too much pressure as this can hurt your gums.
+Place the bristles along the gum line at a 45-degree angle. Gently brush the outer tooth surfaces of 2-3 teeth using a vibrating back and forth motion. Clean outer, inner and biting surfaces of teeth with scrubbing motion.
+Studies show an essential oil based mouthwash reduces plaque by 70% and gum problems by 36% over brushing alone. Use an anti-microbial mouthwash to get complete protection from germs.
+Floss your teeth. Ease the floss gently between your teeth, pull the floss smoothly back and front. Additionally, using a dental floss will help remove food debris that’s stuck in your teeth.
+Clean and brush the surface of your tongue daily because there is bacteria present particularly on the rougher top surface of the tongue. These can contribute to bad breath (halitosis) and negatively affect your dental health.</b></p><hr>
+
+<h2 align="center"><a href="https://en.wikipedia.org/wiki/Hygiene">Click Here</a> To Know More About Hygiene.</h2></div>
+
+</div>
+
+<div class="rightcolumn">
+    <div class="card">
+      <h2 style="font-family: verdana">Helpdesk</h2>
+      <a href="https://www.facebook.com/MyGovIndia/" class="fa fa-facebook"></a>
+
+</div></div>
+
+<div class="rightcolumn">
+    <div class="card">
+    <a href="https://twitter.com/mygovindia" class="fa fa-twitter"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+    <div class="card">
+    <a href="https://www.mygov.in" class="fa fa-google"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+    <div class="card">
+    <a href="https://www.linkedin.com/company/mygov-india/" class="fa fa-linkedin"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+  <div class="card">
+    
+    <a href="https://www.youtube.com/mygovindia" class="fa fa-youtube"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+    <div class="card">
+    <a href="https://www.instagram.com/mygovindia/" class="fa fa-instagram"></a>
+
+ </div></div>
+
+<div class="rightcolumn">
+    <div class="card">
+    <a href="https://api.whatsapp.com/send?phone=919013353535&text=Hi&source=&data=&app_absent=" class="fa fa-whatsapp"></a>
+
+ </div></div>
+
+
+<div class="rightcolumn">
+    <div class="card">
+    <a href="https://t.me/MyGovCoronaNewsdesk" class="fa fa-telegram"></a>
+
+ </div></div></div></body>
+
+ <img src="banner.jpg" style="width: 1503px;height: 500px">
+
+<div class="footer">
+  <h4><font color="#b3b3cc">Website designed for healthy activities</font></h4>
+  <h5><font color="#b3b3cc">Develop and Designed by Pratim Maji and Arijit Mitra</font></h5>
+  <h4><font color="#b3b3cc">Language-English</font></h4>
+  <h4><font color="#b3b3cc"><a href="mailto:healthcaretint@gmail.com">E-mail Support-healthcaretint@gmail.com</a> </font></h4>
+  <h4><font color="#b3b3cc">You can individually contact with the developers by E-mail</font></h4>
+  <h4><font color="#b3b3cc"><a href="mailto:mitrahul008@gmail.com">Arijit Mitra-mitrarahul008@gmail.com </a> </font></h4>
+  <h4><font color="#b3b3cc"><a href="mailto:pratimmaji2@gmail.com">Pratim Maji-pratimmaji2@gmail.com</a> </font></h4>
+  <h3><font color="#b3b3cc">THANKS FOR VISITING OUR WEBSITE</font></h3>
+</div>
+

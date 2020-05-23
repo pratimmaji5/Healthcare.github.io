@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+  <title>WHO guidelines</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 0px;
+  background: skyblue;
+}
+
+/*back to top button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+/*social media logo*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 66px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #00b300;
+  color: white;
+  }
+
+
+.fa-telegram {
+  background: #007acc;
+  color: white;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 80px;
+  font-family: 'Sofia';
+  text-align: center;
+  background: #1abc9c;
+  
+}
+
+.header h1 {
+  font-size: 50px;
+  
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 90%;
+  background-color: white;
+  
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 10%;
+  background-color: skyblue;
+  padding-left: 0px;
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+  
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card2 {
+
+  padding: 150px;
+  margin-top: 0px;
+  background color:skyblue;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Footer */
+.footer {
+  padding: 40px;
+  text-align: center;
+  background: #29293d;
+  margin-top: 0px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="header">
+  <h1>Healthcare</h1>
+  <h2>We Care For Your Health Every Moment During This Pandemic</h2>
+</div>
+
+<div class="topnav">
+<table border="0" width="100%">
+
+  <th width="11.11%"><a href="main.html">Home</a></th>
+  <th width="11.11%"><a href="page1.html">About Health and Hygiene</a></th>
+  <th width="11.11%"><a href="page2.html">About WHO</a></th>
+  <th width="11.11%"><a href="page3.html">About COVID-19</a></th>
+  <th width="11.11%"><a href="page4.html">WHO guidelines</a></th>
+  <th width="11.11%"><a href="page5.html">Health and hygiene chart</a></th>
+  <th width="11.11%"><a href="page6.html">Flow chart</a></th>
+  <th width="11.11%"><a href="https://1drv.ms/p/s!AoI5pUtfcAkRglkzoLyWFjq_JCkK">See ppt</a></th>
+  <th width="11.11%"><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline no.</a></th>
+
+</table>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card2">
+    
+<h1 style="font-family: verdana" align="center">WHO Guidelines for COVID-19</h1>
+      <h2 style="font-family: verdana" align="center">You all should must follow</h2>
+    
+      <hr>
+      <h3>Infection prevention and control during health care when novel coronavirus (nCoV) infection is suspected :</h3>
+<p><b>This is the first edition of guidance on infection prevention and control (IPC) strategies for use when infection with a novel coronavirus (2019-nCoV) is suspected. It has been adapted from WHO’s Infection prevention and control during health care for probable or confirmed cases of Middle East respiratory syndrome coronavirus (MERS-CoV) infection, based on current knowledge of the situation in China and other countries where cases were identified and experiences with severe acute respiratory syndrome (SARS)-CoV and MERS-CoV.</p></b><hr>
+
+
+
+<h3>Infection Prevention and Control for the safe management of a dead body in the context of COVID-19 :</h3>
+<b>This interim guidance is for all those, including managers of health care facilities and mortuaries, religious and public health authorities, and families, who tend to the bodies of persons who have died of suspected or confirmed COVID-19.</b> 
+
+<hr>
+ 
+
+<h3>IPC guidance for long-term care facilities in the context of COVID-19 :</h3>
+
+<b>The objective of this interim guidance is to provide guidance on Infection Prevention and Control in Long-Term Care Facilities (LTCF) in the context of COVID-19 to prevent COVID-19-virus from entering the facility, spreading within the facility, and spreading to outside the facility. This guidance is for LTCF managers and corresponding IPC focal persons in LTCF.</b>
+
+<hr>
+ 
+
+<h3>Consideration for quarantine of individuals in the context of containment for coronavirus disease (COVID-19) :</h3>
+<b>The purpose of this document is to offer guidance to Member States on quarantine measures for individuals in the context of COVID-19. It is intended for those responsible for establishing local or national policy for quarantine of individuals, and adherence to infection prevention and control measures.</b> 
+
+<hr>
+<h3>Health workers exposure risk assessment and management in the context of COVID-19 virus :</h3>
+<b>This tool is to be used by health care facilities that have either cared for or admitted COVID-19 patients; it is to be completed for all health workers who have been exposed to a confirmed COVID-19 patient in a health care facility. It will help determine the risk of COVID-19 virus infection of all HCWs who have been exposed to a COVID-19 patient and then provides recommendations for appropriate management of these HCWs, according to their infection risk.</b><hr>
+
+<h3>Find below the links to the template for collecting the data contained within the tool and a corresponding data dictionary to facilitate the collection of this data :</h3>
+
+
+<b>Rational use of personal protective equipment for coronavirus disease (COVID-19)</b>
+
+<b>This document summarizes WHO’s recommendations for the rational use of personal protective equipment (PPE) in health care and home care settings, as well as during the handling of cargo; it also assesses the current disruption of the global supply chain and considerations for decision making during severe shortages of PPE. This updated version includes a section on considerations for decision making processes and a summary of temporary measures in the context of severe PPE shortage.</b>
+
+<hr>
+
+<h3>Advice on the Use of Masks :</h3>
+
+<b>This document provides advice on the use of masks in communities, during home care, and in health care settings in areas that have reported cases of COVID-19. It is intended for individuals in the community, public health and infection prevention and control (IPC) professionals, health care managers, health care workers (HCWs), and community health workers. This updated version includes a section on Advice to decision makers on the use of masks for healthy people in community settings.</b>
+
+
+<h4>Home care for patients with suspected novel coronavirus (nCoV) infection presenting with mild symptoms and management of contacts</h4>
+
+<b>WHO has developed this rapid advice note to meet the need for recommendations on the safe home care for patients with suspected novel coronavirus (2019-nCoV) infection presenting with mild symptoms and public health measures related to management of asymptomatic contacts.</b><hr>
+
+<h3>Water, sanitation, hygiene and waste management for COVID-19 :</h3>
+
+<b>This interim guidance is the second edition and supplements existing IPC documents by referring to and summarizing the latest evidence on COVID-19 in water supplies and sanitation and highlights WHO guidance on water, sanitation, hand hygiene and health care waste which is relevant for viruses (including coronaviruses). It is written in particular for water and sanitation practitioners and providers.</b>
+
+<hr>
+
+<h3>Guide to local production of WHO-recommended Handrub Formulations
+
+Part A is intended to guide a local producer in the actual preparation of the formulation.
+
+Part B contains important safety and cost information and incorporates information from the WHO Guidelines on Hand Hygiene in Health Care (2009).</h3><hr></p>
+<h2 align="center"><a href="#">Click Here</a> to know Coronavirus disease (COVID-19) advice for the public.</h2>
+</div>
+
+
+<table width="100%" height="450"><tr>
+<td><img src="j2.jpeg" width="100%" height="100%"></td>
+<td><img src="j3.jpg" width="100%" height="100%"></td>
+<td><img src="j4.jpg" width="100%" height="100%"></td>
+</tr></table><br><br>
+</div>
+
+
+ <div class="rightcolumn">
+    <div class="card">
+      <h2 style="font-family: verdana">Helpdesk</h2>
+      <a href="https://www.facebook.com/MyGovIndia/" class="fa fa-facebook"></a>
+
+</div></div>
+
+<div class="rightcolumn">
+    <div class="card">
+    <a href="https://twitter.com/mygovindia" class="fa fa-twitter"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+    <div class="card">
+    <a href="https://www.mygov.in" class="fa fa-google"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+    <div class="card">
+    <a href="https://www.linkedin.com/company/mygov-india/s" class="fa fa-linkedin"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+  <div class="card">
+    
+    <a href="https://www.youtube.com/mygovindia" class="fa fa-youtube"></a>
+
+ </div></div>
+
+ <div class="rightcolumn">
+    <div class="card">
+    <a href="https://www.instagram.com/mygovindia/" class="fa fa-instagram"></a>
+
+ </div></div>
+
+<div class="rightcolumn">
+    <div class="card">
+    <a href="https://api.whatsapp.com/send?phone=919013353535&text=Hi&source=&data=&app_absent=" class="fa fa-whatsapp"></a>
+
+ </div></div>
+
+
+<div class="rightcolumn">
+    <div class="card">
+    <a href="https://t.me/MyGovCoronaNewsdesk" class="fa fa-telegram"></a>
+
+ </div></div></div></body>
+
+
+
+
+
+<img src="banner.jpg" style="width: 1503px;height: 500px">
+
+<div class="footer">
+  <h4><font color="#b3b3cc">Website designed for healthy activities</font></h4>
+  <h5><font color="#b3b3cc">Develop and Designed by Pratim Maji and Arijit Mitra</font></h5>
+  <h4><font color="#b3b3cc">Language-English</font></h4>
+  <h4><font color="#b3b3cc"><a href="mailto:healthcaretint@gmail.com">E-mail Support-healthcaretint@gmail.com</a> </font></h4>
+  <h4><font color="#b3b3cc">You can individually contact with the developers by E-mail</font></h4>
+  <h4><font color="#b3b3cc"><a href="mailto:mitrahul008@gmail.com">Arijit Mitra-mitrarahul008@gmail.com </a> </font></h4>
+  <h4><font color="#b3b3cc"><a href="mailto:pratimmaji2@gmail.com">Pratim Maji-pratimmaji2@gmail.com</a> </font></h4>
+  <h3><font color="#b3b3cc">THANKS FOR VISITING OUR WEBSITE</font></h3>
+</div>
