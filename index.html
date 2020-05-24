@@ -361,34 +361,29 @@ img {vertical-align: middle;}
 }
 
 
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-video {
-  max-width: 100%;
-  height: auto;
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 62.5%; /* 8:5 Aspect Ratio */
 }
 
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
 
 </style>
@@ -445,9 +440,11 @@ function topFunction() {
     <div class="card">
     
 
-<table width="100%" border="0"><tr><th><iframe width="560" height="315" src="https://www.youtube.com/embed/xKPWngYf2Wk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th></tr></table>
+<table width="100%" border="0"><tr><th><div class="container"> 
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/xKPWngYf2Wk"></iframe></div></th></tr></table>
 <br><br>
-<table width="100%" border="0"><tr><th><iframe width="560" height="315" src="https://www.youtube.com/embed/gRxO-dVPaX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+<table width="100%" border="0"><tr><th><div class="container"> 
+  <iframe class="responsive-iframe"src="https://www.youtube.com/embed/gRxO-dVPaX0"></iframe></div></th>
 </tr></table></div></div>
 
 <div class="card2">
