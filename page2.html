@@ -12,12 +12,12 @@
   gtag('config', 'UA-167487542-1');
 </script>
 
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 
-  <title>Healthcare</title>
+
+<title>Healthcare</title>
 <style>
 * {
   box-sizing: border-box;
@@ -28,6 +28,37 @@ body {
   padding: 0px;
   background: skyblue;
 }
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
 
 /*back to top button*/
 #myBtn {
@@ -106,6 +137,8 @@ body {
   color: white;
 }
 
+
+
 /* Header/Blog Title */
 .header {
   padding: 80px;
@@ -119,52 +152,6 @@ body {
   
 }
 
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-
-
-/* Add a card effect for articles */
-.card {
-  
-  padding: 20px;
-  margin-top: 20px;
-}
-
-.card2 {
-  
-  padding: 150px;
-  margin-top: 0px;
-  background color:skyblue;
-  }
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-
-}
-
 /* Footer */
 .footer {
   padding: 40px;
@@ -173,33 +160,166 @@ body {
   margin-top: 0px;
 }
 
-
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
+div.ex1 {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: lightblue;
 }
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-
 
 img {
   max-width: 100%;
   height: auto;
 }
 
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 8:5 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .fa {
+  
+  font-size: 20px;
+  width: 60px;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+
+}
+}
+
+@media screen and (max-width: 400px) {
+    
+    .fa {
+  
+  font-size: 20px;
+  width: 35px;
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
+  
+}
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    div.ex1 {
+  width: 100%;
+  padding: 10px;
+  font-size: 10px;
+  box-sizing: border-box;
+  background-color: lightblue;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .header {
+  padding: 50px;
+  font-family: 'Sofia';
+  text-align: center;
+  background: #1abc9c;
+}
+
+.header h1 {
+  font-size: 50px;
+  
+}
+
+
+.header h2 {
+  font-size: 20px;
+  
+}
+}
+
+@media screen and (max-width: 600px) {
+    
+ .footer {
+  padding: 5px;
+  height: 275px;
+  
+}
+  
+.footer h3 {
+  font-size: 15px;
+  
+}
+
+.footer h5 {
+  font-size: 12px;
+  
+}
+
+.footer h6 {
+  font-size: 8px;
+  
+}
+
+}
+
+@media screen and (max-width: 600px) {
+#myBtn {
+  
+  bottom: 35px;
+  right: 8px;
+  z-index: 99;
+  font-size: 10px;
+  padding: 7px;
+  border-radius: 2px;
+}
+}
+
+
 </style>
 </head>
+
+
+
+
+
 <body>
+
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 
@@ -225,64 +345,80 @@ function topFunction() {
 }
 </script>
 
+
 <div class="header">
   <h1>Healthcare</h1>
   <h2>We Care For Your Health Every Moment During This Pandemic</h2>
 </div>
 
-<div class="topnav">
-<table border="0" width="100%">
 
-  <th width="11.11%"><a href="index.html">Home</a></th>
-  <th width="11.11%"><a href="page1.html">About Health and Hygiene</a></th>
-  <th width="11.11%"><a href="page2.html">About WHO</a></th>
-  <th width="11.11%"><a href="page3.html">About COVID-19</a></th>
-  <th width="11.11%"><a href="page4.html">WHO guidelines</a></th>
-  <th width="11.11%"><a href="page5.html">Health and hygiene chart</a></th>
-  <th width="11.11%"><a href="page6.html">Flow chart</a></th>
-  <th width="11.11%"><a href="https://1drv.ms/p/s!AoI5pUtfcAkRglkzoLyWFjq_JCkK">See ppt</a></th>
-  <th width="11.11%"><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline no.</a></th>
-
-</table>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="page1.html">About Health and Hygiene</a>
+  <a href="page2.html">About WHO</a>
+  <a href="page3.html">About COVID-19</a>
+  <a href="page4.html">WHO guidelines</a>
+  <a href="page5.html">Health and hygiene chart</a>
+  <a href="page6.html">Flow chart</a>
+  <a href="https://1drv.ms/p/s!AoI5pUtfcAkRglkzoLyWFjq_JCkK">See ppt</a>
+  <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline no.</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-    
-<h1  style="font-family: verdana" align="center">ABOUT WHO</h1><hr>
-<tr>
-<td><img src="who5.jpg" width="100%" height="500px"></td>
 
-</tr></div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
-<div class="card2">
-<td align="left"><h2>Better health for everyone, everywhere</h2>
+<br>
+
+<div class="ex1">
+<h1  style="font-family: verdana" align="center">ABOUT WHO</h1><br>
+
+<img src="who5.jpg" width="100%" height="500px"></div>
+
+
+
+<div class="ex1">
+
+<hr>
+<h2>Better health for everyone, everywhere</h2>
 <p><b>We are building a better, healthier future for people all over the world.</b></p>
 
 <P><b>Working with 194 Member States, across six regions, and from more than 150 offices, WHO staff are united in a shared commitment to achieve better health for everyone, everywhere.</b></P>
 
 <P><b>Together we strive to combat diseases – communicable diseases like influenza and HIV, and noncommunicable diseases like cancer and heart disease.</b></P>
 
-<p><b>We help mothers and children survive and thrive so they can look forward to a healthy old age. We ensure the safety of the air people breathe, the food they eat, the water they drink – and the medicines and vaccines they need.</b></p></td></div>
-<td><img src="who 3.jpg" width="100%" height="500px"></td>
+<p><b>We help mothers and children survive and thrive so they can look forward to a healthy old age. We ensure the safety of the air people breathe, the food they eat, the water they drink – and the medicines and vaccines they need.</b></p><hr>
+<br>
+<br>
 
-</tr>
+<img src="who 3.jpg" width="100%" height="500px">
 
-<div class="card2">
-<tr>
+</div>
+
+<div class="ex1">
+
   <h2>Introduction about WHO(WORLD HEALTH ORGANIZATION) :</h2>
   <p><b>The World Health Organization (WHO) is a specialized agency of the United Nations responsible for international public health.The WHO Constitution, which establishes the agency's governing structure and principles, states its main objective as "the attainment by all peoples of the highest possible level of health."It is headquartered in Geneva, Switzerland, with six semi-autonomous regional offices and 150 field offices worldwide.</b></p>
-
-
-<p><b>HEADS :</b><a href="https://en.wikipedia.org/wiki/Tedros_Adhanom"> Tedros Adhanom  </a>,<a href="https://en.wikipedia.org/wiki/Soumya_Swaminathan_(scientist)">Soumya Swaminathan  </a>,<a href="https://en.wikipedia.org/wiki/Jane_Ellison">Jane Ellison  </a>,<a href="https://en.wikipedia.org/wiki/Peter_Salama">Peter Salama </a>.</p>
+<hr>
+  <p><b>HEADS :</b><a href="https://en.wikipedia.org/wiki/Tedros_Adhanom"> Tedros Adhanom  </a>,<a href="https://en.wikipedia.org/wiki/Soumya_Swaminathan_(scientist)">Soumya Swaminathan  </a>,<a href="https://en.wikipedia.org/wiki/Jane_Ellison">Jane Ellison  </a>,<a href="https://en.wikipedia.org/wiki/Peter_Salama">Peter Salama </a>.</p>
 
 <p><b>HEADQUARTERS :</b><a href="https://en.wikipedia.org/wiki/Geneva"> Geneva ,Switzerland</a>.</p>
 
 <p><b>FOUNDED :</b> 7 April, 1948</p>
 
 <p><b>PARENT ORGANIZATION :</b> <a href="https://en.wikipedia.org/wiki/United_Nations_Economic_and_Social_Council">United Nations Economic and Social Council</a></p>
-
+<hr>
 <p><b>The WHO was established in 7 April 1948, which is commemorated as World Health Day.The first meeting of the World Health Assembly (WHA), the agency's governing body, took place on 24 July 1948. The WHO incorporated the assets, personnel, and duties of the League of Nations' Health Organisation and the Office International d'Hygiène Publique, including the International Classification of Diseases.Its work began in earnest in 1951 following a significant infusion of financial and technical resources.</b></p>
 
 <p><b>The WHO's broad mandate includes advocating for universal healthcare, monitoring public health risks, coordinating responses to health emergencies, and promoting human health and well being.It provides technical assistance to countries, sets international health standards and guidelines, and collects data on global health issues through the World Health Survey. Its flagship publication, the World Health Report, provides expert assessments of global health topics and health statistics on all nations.The WHO also serves as a forum for summits and discussions on health issues.</b></p>
@@ -293,9 +429,47 @@ function topFunction() {
 
 <P><b>The WHO relies on assessed and voluntary contributions from member states and private donors for funding. As of 2018, it has a budget of over $4.2 billion, most of which comes from voluntary contributions from member states.The agency is part of the United Nations Sustainable Development Group.</b></p>
  <h2 align="center"> <a href="https://en.wikipedia.org/wiki/World_Health_Organization">click here</a> to know more about WHO.</h2>
- <h2 align="center"> <a href="https://www.who.int/">click here</a> to visit WHO official website.</h2></P></tr></td></div></div>
+ <h2 align="center"> <a href="https://www.who.int/">click here</a> to visit WHO official website.</h2></P>
+
+</div>
 
 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+
+<br><br>
  <hr>
   <table width="100%" border="0"><tr><td>
       <h1 style="font-family: verdana" align="center"><font color="black"> Government's Social Helpdesk</font></h1></td></tr></table>
@@ -319,8 +493,9 @@ function topFunction() {
 <hr>
 <br><br>
 
- <table width="100%" border="0"><tr><th>
-<img src="banner.jpg" style="width: 100%;height: 500px"></th></tr>
+ <table width="100%" border="0"><tr><th><img src="banner.jpg" width=100%; height=500px></th></tr>
+
+</table>
 
 <tr><td>
 <div class="footer">
@@ -328,9 +503,17 @@ function topFunction() {
   <h6><font color="#b3b3cc">Develop and Designed by Pratim Maji and Arijit Mitra</font></h6>
   <h5><font color="#b3b3cc">Language-English</font></h5>
   <h5><font color="#b3b3cc"><a href="mailto:healthcaretint@gmail.com">E-mail Support-healthcaretint@gmail.com</a></font></h5>
-  <h5><font color="#b3b3cc">You can individually contact with the developers by E-mail</font></h5>
+  <h6><font color="#b3b3cc">You can individually contact with the developers by E-mail</font></h6>
   <h5><font color="#b3b3cc"><a href="mailto:mitrahul008@gmail.com">Arijit Mitra-mitrarahul008@gmail.com </a></font></h5>
   <h5><font color="#b3b3cc"><a href="mailto:pratimmaji2@gmail.com">Pratim Maji-pratimmaji2@gmail.com</a></font></h5>
   <h3><font color="#b3b3cc">THANKS FOR VISITING OUR WEBSITE</font></h3>
 </div></td></tr></table>
+
 </body></html>
+
+
+
+
+
+
+
