@@ -11,11 +11,14 @@
 
   gtag('config', 'UA-167487542-1');
 </script>
-
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <title>Healthcare</title>
 <style>
@@ -24,11 +27,9 @@
 }
 
 body {
-  font-family: Arial;
-  padding: 0px;
-  background: skyblue;
-}
-
+    font: sans-serif;
+    color: #777;
+  }
 
 .topnav {
   overflow: hidden;
@@ -329,7 +330,7 @@ div.ex1 {
   width: 100%;
   padding: 50px;
   box-sizing: border-box;
-  background-color: lightblue;
+  background-color: #2d2d30;
 }
 
 
@@ -430,7 +431,7 @@ img {
   padding: 10px;
   font-size: 10px;
   box-sizing: border-box;
-  background-color: lightblue;
+  background-color: #2d2d30;
 }
 }
 
@@ -599,17 +600,87 @@ input[type=submit]:hover {
 
 
 
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  
+}
+  
+  
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  
+  </style>
 
 
 
-</style>
 </head>
 
 
 
 
 
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
@@ -637,38 +708,92 @@ function topFunction() {
 </script>
 
 
-<div class="header">
-  <h1>Healthcare</h1>
-  <h2>We Care For Your Health Every Moment During This Pandemic</h2>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Healthcare</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="page1.html">ABOUT HEALTH AND HYGIENE</a></li>
+        <li><a href="page2.html">ABOUT WHO</a></li>
+        <li><a href="page3.html">ABOUT COVID-19</a></li>
+        <li><a href="page4.html">WHO GUIDELINES</a></li>
+        <li><a href="page5.html">HEALTH AND HYGIENE CHART</a></li>
+        <li><a href="#contact">HELPLINE NO.</a></li>
+        <li><a href="#contact">FEEDBACK</a></li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="n.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h2>during this pandemic</h2>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="n1.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h2>during this pandemic</h2>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="p1.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h2>during this pandemic</h2>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="n2.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h2>during this pandemic</h2>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
 </div>
 
 
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="page1.html">About Health and Hygiene</a>
-  <a href="page2.html">About WHO</a>
-  <a href="page3.html">About COVID-19</a>
-  <a href="page4.html">WHO guidelines</a>
-  <a href="page5.html">Health and hygiene chart</a>
-  <a href="page6.html">Flow chart</a>
-  <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline no.</a>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-nYBiJP9U8KByuQlThuaT1TBWk78IhORmjgILjMpkopIENg/viewform?usp=sf_link">Helpdesk & Feedback</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
 
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
 
 
 <table width="100%"><tr><td align="center"><img src="m4.PNG" width="80%"></td></tr></table>
@@ -685,82 +810,6 @@ function myFunction() {
 </div>
 <br><br>
 
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 5</div>
-  <img src="health7.png" style="width:100%">
-  
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 5</div>
-  <img src="health6.jpg" style="width:100%">
-  <div class="text">#Stay Home Stay Safe</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 5</div>
-  <img src="ss.PNG" style="width:100%">
-  <div class="text">#Stay Home Stay Safe</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">4 / 5</div>
-  <img src="health4.jpg" style="width:100%">
-  <div class="text">#Stay Home Stay Safe</div>
-</div>
-
-
-<div class="mySlides fade">
-  <div class="numbertext">5 / 5</div>
-  <img src="health8.jfif" style="width:100%">
-  <div class="text">#Stay Home Stay Safe</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span> 
-</div>
-
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
 
 <script>
 //Get the button
@@ -814,8 +863,10 @@ function myFunction() {
   <th><img src="p2.jpg" width="100%" height="100%"></th>
 </tr></table>
 
+
+<div class="ex1">
 <table width="100%" border="0">
-<br><br>
+<br>
 <tr>
  <th><a href="https://static.mygov.in/rest/s3fs-public/mygov_158831498053877021.pdf"><button class="button button1">Hotspot Areas</button></a></th>
 
@@ -827,7 +878,7 @@ function myFunction() {
 
 <th><a href="https://www.pmcares.gov.in/en/"><button class="button button5">Donate to PM cares</button></a></th>
 <hr></tr></table><hr>
-
+</div>
 <br><br>
 
 <table width="100%"><tr><td align="center"><img src="p4.jpg" width="80%"></td></tr></table>
