@@ -31,34 +31,12 @@ body {
     color: #777;
   }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
+h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
 
 
 /*back to top button*/
@@ -213,27 +191,7 @@ body {
   color: white;
 }
 
-/* Header/Blog Title */
-.header {
-  padding: 80px;
-  font-family: 'Sofia';
-  text-align: center;
-  background: #1abc9c;
-}
 
-.header h1 {
-  font-size: 50px;
-  
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-
-}
 
 /* Footer */
 .footer {
@@ -243,92 +201,12 @@ body {
   margin-top: 0px;
 }
 
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
 
 div.ex1 {
   width: 100%;
   padding: 50px;
+  font-size: 30px;
   box-sizing: border-box;
   background-color: #2d2d30;
 }
@@ -375,28 +253,6 @@ img {
 }
 
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
 
 @media screen and (max-width: 600px) {
   .fa {
@@ -429,7 +285,7 @@ img {
     div.ex1 {
   width: 100%;
   padding: 10px;
-  font-size: 10px;
+  font-size: 15px;
   box-sizing: border-box;
   background-color: #2d2d30;
 }
@@ -583,71 +439,42 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
+
 
 
 
 .carousel-inner img {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */ 
+    
     width: 100%; /* Set width to 100% */
     margin: auto;
   }
   .carousel-caption h3 {
     color: #fff !important;
   }
-  @media (max-width: 600px) {
+  
+  
+ @media (max-width: 600px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
-  
-}
-  
-  
-  .modal-header, h4, .close {
-    background-color: #333;
-    color: #fff !important;
-    text-align: center;
-    font-size: 30px;
   }
-  .modal-header, .modal-body {
-    padding: 40px 50px;
-  }
-  .nav-tabs li a {
-    color: #777;
-  }
-  #googleMap {
-    width: 100%;
-    height: 400px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }  
-
+  
+  
+  
 
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
     background-color: #2d2d30;
     border: 0;
-    font-size: 11px !important;
+    font-size: 13px !important;
     letter-spacing: 4px;
     opacity: 0.9;
   }
   .navbar li a, .navbar .navbar-brand { 
     color: #d5d5d5 !important;
+
   }
   .navbar-nav li a:hover {
     color: #fff !important;
@@ -719,7 +546,7 @@ function topFunction() {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Healthcare</a>
+      <a class="navbar-brand" href="#myPage"><font color="white" size="15">Healthcare</font></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -752,7 +579,7 @@ function topFunction() {
         <img src="n.jpg" width="1200" height="500px">
         <div class="carousel-caption">
           <h3>We care for your health every moment</h3>
-          <h2>during this pandemic</h2>
+          <h4>during this pandemic</h4>
         </div>      
       </div>
 
@@ -760,23 +587,16 @@ function topFunction() {
         <img src="n1.jpg" width="1200" height="500px">
         <div class="carousel-caption">
           <h3>We care for your health every moment</h3>
-          <h2>during this pandemic</h2>
+          <h4>during this pandemic</h4>
         </div>      
       </div>
     
-      <div class="item">
-        <img src="p1.jpg" width="1200" height="500px">
-        <div class="carousel-caption">
-          <h3>We care for your health every moment</h3>
-          <h2>during this pandemic</h2>
-        </div>      
-      </div>
-
+      
       <div class="item">
         <img src="n2.jpg" width="1200" height="500px">
         <div class="carousel-caption">
           <h3>We care for your health every moment</h3>
-          <h2>during this pandemic</h2>
+          <h4>during this pandemic</h4>
         </div>      
       </div>
     </div>
@@ -798,15 +618,15 @@ function topFunction() {
 
 <table width="100%"><tr><td align="center"><img src="m4.PNG" width="80%"></td></tr></table>
     
-<hr><br>
+<hr>
 <div class="container1"> 
 <table width="100%" border="0"><tr>
   <th><iframe class="responsive-iframe"src="https://www.youtube.com/embed/xKPWngYf2Wk"></iframe></th>
-</tr></table></div><br><hr>
+</tr></table></div><hr>
 
 <div class="ex1">
-<table width="100%" border="0"><tr><td><h2 style="font-family: vardana">The COVID-19 pandemic, also known as the coronavirus pandemic, is an ongoing pandemic of coronavirus disease 2019 (COVID‑19), caused by severe acute respiratory syndrome coronavirus 2 (SARS‑CoV‑2).The outbreak was first identified in Wuhan, China, in December 2019.</h2>
-<h2 style="font-family: vardana">The World Health Organization declared the outbreak a Public Health Emergency of International Concern on 30 January, and a pandemic on 11 March.As of 22 May 2020, more than 5.1 million cases of COVID-19 have been reported in more than 188 countries and territories,resulting in more than 333,000 deaths.More than 1.95 million people have recovered from the virus.</h2></td></tr></table>
+<p><font color="white">The COVID-19 pandemic, also known as the coronavirus pandemic, is an ongoing pandemic of coronavirus disease 2019 (COVID‑19), caused by severe acute respiratory syndrome coronavirus 2 (SARS‑CoV‑2).The outbreak was first identified in Wuhan, China, in December 2019.</font></p>
+<p><font color="white">The World Health Organization declared the outbreak a Public Health Emergency of International Concern on 30 January, and a pandemic on 11 March.As of 22 May 2020, more than 5.1 million cases of COVID-19 have been reported in more than 188 countries and territories,resulting in more than 333,000 deaths.More than 1.95 million people have recovered from the virus.</font></p>
 </div>
 <br><br>
 
@@ -848,25 +668,25 @@ function myFunction() {
 
 
   <div class="ex1">
-<table width="100%" border="0"><tr><td>
-<h3 style="font-family: vardana">The virus is primarily spread between people during close contact,most often via small droplets produced by coughing, sneezing, and talking.The droplets usually fall to the ground or onto surfaces rather than travelling through air over long distances.Less commonly, people may become infected by touching a contaminated surface and then touching their face.It is most contagious during the first three days after the onset of symptoms, although spread is possible before symptoms appear, and from people who do not show symptoms.</h3>
-<h3 style="font-family: vardana">Common symptoms include fever, cough, fatigue, shortness of breath, and loss of smell.Complications may include pneumonia and acute respiratory distress syndrome.The time from exposure to onset of symptoms is typically around five days but may range from two to fourteen days.There is no known vaccine or specific antiviral treatment.Primary treatment is symptomatic and supportive therapy.</h3>
+
+<p><font color="white">The virus is primarily spread between people during close contact,most often via small droplets produced by coughing, sneezing, and talking.The droplets usually fall to the ground or onto surfaces rather than travelling through air over long distances.Less commonly, people may become infected by touching a contaminated surface and then touching their face.It is most contagious during the first three days after the onset of symptoms, although spread is possible before symptoms appear, and from people who do not show symptoms.</font></p>
+<p><font color="white">Common symptoms include fever, cough, fatigue, shortness of breath, and loss of smell.Complications may include pneumonia and acute respiratory distress syndrome.The time from exposure to onset of symptoms is typically around five days but may range from two to fourteen days.There is no known vaccine or specific antiviral treatment.Primary treatment is symptomatic and supportive therapy.</font></p>
 
 
 
-<h3 style="font-family: vardana">The pandemic has caused global social and economic disruption,including the largest global recession since the Great Depression.It has led to the postponement or cancellation of sporting, religious, political, and cultural events,widespread supply shortages exacerbated by panic buying,and decreased emissions of pollutants and greenhouse gases. Schools, universities, and colleges are currently closed either on a nationwide or local basis in 185 countries, affecting approximately 98.5 percent of the world's student population.Misinformation about the virus has spread online,and there have been incidents of xenophobia and discrimination against Chinese people and against those perceived as being Chinese or as being from areas with high infection rates.</h3></td></tr></table>
+<p><font color="white">The pandemic has caused global social and economic disruption,including the largest global recession since the Great Depression.It has led to the postponement or cancellation of sporting, religious, political, and cultural events,widespread supply shortages exacerbated by panic buying,and decreased emissions of pollutants and greenhouse gases. Schools, universities, and colleges are currently closed either on a nationwide or local basis in 185 countries, affecting approximately 98.5 percent of the world's student population.Misinformation about the virus has spread online,and there have been incidents of xenophobia and discrimination against Chinese people and against those perceived as being Chinese or as being from areas with high infection rates.</font>></p>
 </div>
-<br><br>
+<br>
 <table width="100%"><tr>
   <th><img src="p1.jpg" width="100%" height="100%"></th>
   
   <th><img src="p2.jpg" width="100%" height="100%"></th>
 </tr></table>
-
+<br>
 
 <div class="ex1">
 <table width="100%" border="0">
-<br>
+
 <tr>
  <th><a href="https://static.mygov.in/rest/s3fs-public/mygov_158831498053877021.pdf"><button class="button button1">Hotspot Areas</button></a></th>
 
@@ -879,15 +699,18 @@ function myFunction() {
 <th><a href="https://www.pmcares.gov.in/en/"><button class="button button5">Donate to PM cares</button></a></th>
 <hr></tr></table><hr>
 </div>
-<br><br>
+<br>
 
 <table width="100%"><tr><td align="center"><img src="p4.jpg" width="80%"></td></tr></table>
 
-<br><br>
+<br>
 
+<div class="ex1">
  <hr>
-  <table width="100%" border="0"><tr><td>
-      <h1 style="font-family: verdana" align="center"><font color="black"> Government's Social Helpdesk</font></h1></td></tr></table>
+  <table width="100%" border="0">
+
+    <tr><td>
+      <h2 style="font-family: verdana" align="center"><font color="white"> Government's Social Helpdesk</font></h2></td></tr></table>
 <table width="100%" border="0">
       <tr><th><a href="https://www.facebook.com/MyGovIndia/" class="fa fa-facebook"></a></th>
 
@@ -906,7 +729,9 @@ function myFunction() {
      <th> <a href="https://t.me/MyGovCoronaNewsdesk" class="fa fa-telegram"></a></th></tr></table>
     
 <hr>
-<br><br>
+
+</div>
+<br>
 
 <table width="100%"><tr><td align="center"><img src="m1.png" width="90%"></td></tr></table>
 
@@ -942,7 +767,7 @@ function myFunction() {
   <h6><font color="#b3b3cc">You can individually contact with the developers by E-mail</font></h6>
   <h5><font color="#b3b3cc"><a href="mailto:mitrahul008@gmail.com">Arijit Mitra-mitrarahul008@gmail.com </a></font></h5>
   <h5><font color="#b3b3cc"><a href="mailto:pratimmaji2@gmail.com">Pratim Maji-pratimmaji2@gmail.com</a></font></h5>
-  <h3><font color="#b3b3cc">THANKS FOR VISITING OUR WEBSITE</font></h3>
+  <h2><font color="#b3b3cc">THANKS FOR VISITING OUR WEBSITE</font></h2>
 </div></td></tr></table>
 
 </body></html>
