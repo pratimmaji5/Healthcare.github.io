@@ -11,13 +11,14 @@
 
   gtag('config', 'UA-167487542-1');
 </script>
-
-
-
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <title>Healthcare</title>
 <style>
@@ -26,40 +27,16 @@
 }
 
 body {
-  font-family: Arial;
-  padding: 0px;
-  background: skyblue;
-}
+    font: sans-serif;
+    color: #777;
+  }
 
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
+h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
 
 
 /*back to top button*/
@@ -72,7 +49,7 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: #111;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -141,18 +118,6 @@ body {
 
 
 
-/* Header/Blog Title */
-.header {
-  padding: 80px;
-  font-family: 'Sofia';
-  text-align: center;
-  background: #1abc9c;
-}
-
-.header h1 {
-  font-size: 50px;
-  
-}
 
 /* Footer */
 .footer {
@@ -162,19 +127,40 @@ body {
   margin-top: 0px;
 }
 
+
+
 div.ex1 {
   width: 100%;
   padding: 50px;
+  font-size: 30px;
   box-sizing: border-box;
-  background-color: lightblue;
+  background-color: #2d2d30;
 }
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-.container {
+.container1 {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -192,28 +178,6 @@ img {
   border: none;
 }
 
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 
 
 @media screen and (max-width: 600px) {
@@ -247,9 +211,9 @@ img {
     div.ex1 {
   width: 100%;
   padding: 10px;
-  font-size: 10px;
+  font-size: 15px;
   box-sizing: border-box;
-  background-color: lightblue;
+  background-color: #2d2d30;
 }
 }
 
@@ -274,6 +238,9 @@ img {
   
 }
 }
+
+
+
 
 @media screen and (max-width: 600px) {
     
@@ -313,14 +280,124 @@ img {
 }
 
 
-</style>
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+
+
+
+
+.carousel-inner img {
+    
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  
+  
+ @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  
+  
+  
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 13px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  
+  </style>
+
+
+
 </head>
 
 
 
 
 
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
@@ -348,62 +425,112 @@ function topFunction() {
 </script>
 
 
-<div class="header">
-  <h1>Healthcare</h1>
-  <h2>We Care For Your Health Every Moment During This Pandemic</h2>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><font color="white" size="6">Healthcare</font></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="page1.html">ABOUT HEALTH AND HYGIENE</a></li>
+        <li><a href="page2.html">ABOUT WHO</a></li>
+        <li><a href="page3.html">ABOUT COVID-19</a></li>
+        <li><a href="page4.html">WHO GUIDELINES</a></li>
+        <li><a href="page5.html">HEALTH AND HYGIENE CHART</a></li>
+        <li><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">HELPLINE NO.</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe-nYBiJP9U8KByuQlThuaT1TBWk78IhORmjgILjMpkopIENg/viewform?usp=sf_link">FEEDBACK</a></li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="n.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h4>during this pandemic</h4>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="n1.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h4>during this pandemic</h4>
+        </div>      
+      </div>
+    
+      
+      <div class="item">
+        <img src="n2.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h4>during this pandemic</h4>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
 </div>
 
 
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="page1.html">About Health and Hygiene</a>
-  <a href="page2.html">About WHO</a>
-  <a href="page3.html">About COVID-19</a>
-  <a href="page4.html">WHO guidelines</a>
-  <a href="page5.html">Health and hygiene chart</a>
-  <a href="page6.html">Flow chart</a>
-  <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline no.</a>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-nYBiJP9U8KByuQlThuaT1TBWk78IhORmjgILjMpkopIENg/viewform?usp=sf_link">Helpdesk & Feedback</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
 
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
 
 <br>
 
 <div class="ex1">
-<h1  style="font-family: verdana" align="center">Proper health and hygiene chart according to WHO guidelines</h1><br>
+<h1 align="center"><font color="white">Proper health and hygiene chart according to WHO guidelines</font></h1>
 
 
 
 <br>
-<h3 style="font-family: verdana">Living a healthy life can do much more than make you feel better today — it can help you avoid a plethora of health problems as you age. Small, simple changes to your daily life can pay big dividends in the long run.
+<p><font color="white">Living a healthy life can do much more than make you feel better today — it can help you avoid a plethora of health problems as you age. Small, simple changes to your daily life can pay big dividends in the long run.
 
-With this in mind, we turned to several of our Physiquality partners to ask what they thought were the most important things to do and avoid on the pathway to a long and healthy life. See our list of expert's below. Here’s what they had to share :</h3>
-
+With this in mind, we turned to several of our Physiquality partners to ask what they thought were the most important things to do and avoid on the pathway to a long and healthy life. See our list of expert's below. Here’s what they had to share :</font></p><br></div>
+<br>
+<div class="ex1">
 <hr>
 
 <table width="100%"><tr><th><img src="h1.jpg" width="100%" height="100%"></th></tr></table>
   
 
+<hr></div><br>
+
+<div class="ex1"><hr>
+<p>(1)   Do smile. Smiling changes your attitude and can change your outlook on the day. Scientific American even collated some studies that proved smiling can actually make you feel better.</p>
 <hr>
-<p><b>(1)   Do smile. Smiling changes your attitude and can change your outlook on the day. Scientific American even collated some studies that proved smiling can actually make you feel better.</b></p>
+<p>(2)   Don’t worry or stress. When you get distracted by what might happen or what others are doing or have done, it’s difficult to focus on what you need to do on any given day. In the long run, stress can even damage the body, having been linked to heart disease, diabetes, and more. It’s healthier to approach each day with a fresh mind (and smile!), creating a list of priorities and approaching it with a clear head. And if you don’t finish your list that day, congratulate yourself for what you have accomplished, rather than berating yourself for what didn’t get finished.</p>
 <hr>
-<p><b>(2)   Don’t worry or stress. When you get distracted by what might happen or what others are doing or have done, it’s difficult to focus on what you need to do on any given day. In the long run, stress can even damage the body, having been linked to heart disease, diabetes, and more. It’s healthier to approach each day with a fresh mind (and smile!), creating a list of priorities and approaching it with a clear head. And if you don’t finish your list that day, congratulate yourself for what you have accomplished, rather than berating yourself for what didn’t get finished.</b></p>
-<hr>
-<p><b>(3)   Drink plenty of water.Do drink plenty of water. Throw out the bottled soda and packets of powdered drinks and stock up on water — bottled, filtered, sparkling or straight from the tap. While there’s been some dispute in the last few years about how much exactly to drink per day, there’s no question that water is essential to your body. Bonus: drinking water has also been shown to help people lose weight!</b></p>
+<p>(3)   Drink plenty of water.Do drink plenty of water. Throw out the bottled soda and packets of powdered drinks and stock up on water — bottled, filtered, sparkling or straight from the tap. While there’s been some dispute in the last few years about how much exactly to drink per day, there’s no question that water is essential to your body. Bonus: drinking water has also been shown to help people lose weight!</p>
 
 
 <hr>
@@ -418,11 +545,11 @@ With this in mind, we turned to several of our Physiquality partners to ask what
 <hr>
 
 
-<p><b>(4)   Don’t fill your body with toxins. Just about everyone that we asked made cigarette smoking their number-one no-no. While most people can list the evils of tobacco from memory — emphysema, lung cancer and cardiovascular disease usually topping the list — our society is still much more accepting of drinking. While most health experts agree that drinking one to two glasses of wine on occasion is not only acceptable but even beneficial for your health, many people often forget the dangers of overdrinking. In the short term, drinking more than one alcoholic drink per hour can lead to sickness, blackouts and alcohol poisoning, as well as such poor judgment as drunk driving. In the long term, excessive imbibing and alcohol abuse can lead to liver disease, pancreatitis, neuropathy and death.</b></p>
+<p>(4)   Don’t fill your body with toxins. Just about everyone that we asked made cigarette smoking their number-one no-no. While most people can list the evils of tobacco from memory — emphysema, lung cancer and cardiovascular disease usually topping the list — our society is still much more accepting of drinking. While most health experts agree that drinking one to two glasses of wine on occasion is not only acceptable but even beneficial for your health, many people often forget the dangers of overdrinking. In the short term, drinking more than one alcoholic drink per hour can lead to sickness, blackouts and alcohol poisoning, as well as such poor judgment as drunk driving. In the long term, excessive imbibing and alcohol abuse can lead to liver disease, pancreatitis, neuropathy and death.</p>
 <hr>
-<p><b>(5)   Do eat breakfast. People who eat breakfast are more likely to maintain a healthy diet and lifestyle, and it’s been shown that kids score better on tests and in school after eating breakfast. Opt for 300-500 calories, including protein and at least one or two servings of fruits or vegetables.</b></p>
+<p>(5)   Do eat breakfast. People who eat breakfast are more likely to maintain a healthy diet and lifestyle, and it’s been shown that kids score better on tests and in school after eating breakfast. Opt for 300-500 calories, including protein and at least one or two servings of fruits or vegetables.</p>
 <hr>
-<p><b>(6)   Don’t yo-yo diet. Cycles of excessive dieting and binging are hard on your body and can lead to such metabolic disorders as hypertension and diabetes. With each successive cycle, your body will take longer to lose weight and will regain it more quickly. It’s much better to adjust your lifestyle gradually, building your exercise routine slowing and changing your eating habits towards healthier food, which leads to…</b></p>
+<p>(6)   Don’t yo-yo diet. Cycles of excessive dieting and binging are hard on your body and can lead to such metabolic disorders as hypertension and diabetes. With each successive cycle, your body will take longer to lose weight and will regain it more quickly. It’s much better to adjust your lifestyle gradually, building your exercise routine slowing and changing your eating habits towards healthier food, which leads to…</p>
 
 
 <hr>
@@ -439,11 +566,11 @@ With this in mind, we turned to several of our Physiquality partners to ask what
 <hr>
 
 
-<p><b>(7)   Eat your fruit and vegetables.Do eat more real, fresh food in the form of fruits and vegetables, and less highly processed and packaged foods. Processed foods come with a long list of ingredients that are intended to lengthen the shelf life of these food-like products, not your health and longevity. In addition, sugar has been under scrutiny recently as a toxic ingredient that, if overconsumed, can lead to fatty liver, a key component of obesity. The good news is that the push for fresh produce has led to many farmers markets and better access to fruits and vegetables across the U.S.; some doctors are even prescribing better nutrition as a way to remind patients how important it is for their health.</b></p>
+<p>(7)   Eat your fruit and vegetables.Do eat more real, fresh food in the form of fruits and vegetables, and less highly processed and packaged foods. Processed foods come with a long list of ingredients that are intended to lengthen the shelf life of these food-like products, not your health and longevity. In addition, sugar has been under scrutiny recently as a toxic ingredient that, if overconsumed, can lead to fatty liver, a key component of obesity. The good news is that the push for fresh produce has led to many farmers markets and better access to fruits and vegetables across the U.S.; some doctors are even prescribing better nutrition as a way to remind patients how important it is for their health.</p>
 <hr>
-<p><b>(8)   Don’t keep tempting foods in your kitchen. Studies have shown that communities with lots of fast food places but few grocery stores have higher levels of obesity. The same logic can be applied to your own home — if you stock your pantry with unhealthy foods like chips and cookies, what are you likely to turn to for a snack when you get a craving in the middle of the afternoon? It’s easier to use your willpower in the grocery store, stocking your home with healthy fruit and vegetables; when you get that craving but the fatty snacks aren’t there to tempt you, you’ll be much more likely to eat the healthy food.</b></p>
+<p>(8)   Don’t keep tempting foods in your kitchen. Studies have shown that communities with lots of fast food places but few grocery stores have higher levels of obesity. The same logic can be applied to your own home — if you stock your pantry with unhealthy foods like chips and cookies, what are you likely to turn to for a snack when you get a craving in the middle of the afternoon? It’s easier to use your willpower in the grocery store, stocking your home with healthy fruit and vegetables; when you get that craving but the fatty snacks aren’t there to tempt you, you’ll be much more likely to eat the healthy food.</p>
 <hr>
-<p><b>(9)   Do take a break during the workday for a quick walk or stretch at your desk. Sitting at your desk for hours at a time can cause eye strain, back pain and stress. It’s been shown that simple activities like taking a walk around the office or even bending down to tie your shoelaces will vary your heart rate. You can also climb the stairs to the next floor to use the bathroom or walk across the office to talk to someone rather than emailing.</b></p>
+<p>(9)   Do take a break during the workday for a quick walk or stretch at your desk. Sitting at your desk for hours at a time can cause eye strain, back pain and stress. It’s been shown that simple activities like taking a walk around the office or even bending down to tie your shoelaces will vary your heart rate. You can also climb the stairs to the next floor to use the bathroom or walk across the office to talk to someone rather than emailing.</p>
 
 
 <hr>
@@ -451,9 +578,9 @@ With this in mind, we turned to several of our Physiquality partners to ask what
 
 <table width="100%">
   <tr>
-      <th><img src="h9.png" width="950px"></th></tr></table>
+      <td align="center"><img src="h9.png" width="950px"></td></tr></table><hr>
       <table width="100%">
-  <tr><th><img src="h10.jpg" width="839px"></th>
+  <tr><td align="center"><img src="h10.jpg" width="839px"></td>
   </tr>
 </table>
 
@@ -461,11 +588,11 @@ With this in mind, we turned to several of our Physiquality partners to ask what
 <hr>
 
 
-<p><b>(10)   Don’t spend time with negative people. We all know someone who will consistently point to the negative: A new job is a bad move because you’ll have a longer commute; a new boyfriend means less time with others. Spending time with someone like this eventually gets you down as well; it’s almost impossible to ignore the negativity. Try to remind them about the good things in life, and then quickly walk away to focus on the positive. You might feel guilty about walking away, but your mood and outlook for the rest of the day will be much better.</b></p>
+<p>(10)   Don’t spend time with negative people. We all know someone who will consistently point to the negative: A new job is a bad move because you’ll have a longer commute; a new boyfriend means less time with others. Spending time with someone like this eventually gets you down as well; it’s almost impossible to ignore the negativity. Try to remind them about the good things in life, and then quickly walk away to focus on the positive. You might feel guilty about walking away, but your mood and outlook for the rest of the day will be much better.</p>
 <hr>
-<p><b>(11)   Exercise!Do exercise. We all know that exercise is good for us. Regular, moderate-intensity physical activity isn’t just for getting fit — it can also significantly lower your risk of cancer, heart disease, diabetes, osteoporosis, arthritis and many other diseases, while keeping your brain active as well. If you’re busy and don’t know how to fit exercise into your routine, walking is the easiest form of exercise that everyone can do. Walking 10,000 steps a day can help reduce your waistline and lower the risk of heart disease and cancer.</b></p>
+<p>(11)   Exercise!Do exercise. We all know that exercise is good for us. Regular, moderate-intensity physical activity isn’t just for getting fit — it can also significantly lower your risk of cancer, heart disease, diabetes, osteoporosis, arthritis and many other diseases, while keeping your brain active as well. If you’re busy and don’t know how to fit exercise into your routine, walking is the easiest form of exercise that everyone can do. Walking 10,000 steps a day can help reduce your waistline and lower the risk of heart disease and cancer.</p>
 <hr>
-<p><b>(12)   Don’t isolate yourself socially. It’s been known for a while that people with healthy relationships live longer, but now some studies are showing that people without a social community have greater health risks. According to one study, “Weak social ties are more harmful than not exercising and twice as risky as being obese.” Connecting with people is one of the five things people who live to be 100 had in common.</b></p>
+<p>(12)   Don’t isolate yourself socially. It’s been known for a while that people with healthy relationships live longer, but now some studies are showing that people without a social community have greater health risks. According to one study, “Weak social ties are more harmful than not exercising and twice as risky as being obese.” Connecting with people is one of the five things people who live to be 100 had in common.</p>
 
 
 <hr>
@@ -474,7 +601,7 @@ With this in mind, we turned to several of our Physiquality partners to ask what
 <table width="100%">
   <tr>
       
-      <th><img src="h7.png" width="748px"></th>
+      <td align="center"><img src="h7.png" width="748px"></td>
   </tr>
 </table>
 
@@ -482,15 +609,17 @@ With this in mind, we turned to several of our Physiquality partners to ask what
 <hr>
 
 
-<p><b>(13)   Do activities you actually enjoy. This sounds easier than it sometimes can be. We’ve all signed up for new classes at the gym or a new sports league with high hopes, but may dread the actual experience. You’re much more likely to stick to your new routine if you enjoy it, and you’ll benefit both mentally and physically.</b></p>
+<p>(13)   Do activities you actually enjoy. This sounds easier than it sometimes can be. We’ve all signed up for new classes at the gym or a new sports league with high hopes, but may dread the actual experience. You’re much more likely to stick to your new routine if you enjoy it, and you’ll benefit both mentally and physically.</p>
 <hr>
-<p><b>(14)   Take a break and walk the dog.Don’t sit for more than 2-3 hours at a time. We already mentioned leaving your desk from time to time at work. The same goes for when you get home, especially if you sit at a computer all day. Inactivity can lead to heart disease and weight gain. Take a look at what your city or town has to offer — go to a museum, play at the park with your kids, or simply walk the dog. The more active you are, the healthier you’ll be.</b></p>
+<p>(14)   Take a break and walk the dog.Don’t sit for more than 2-3 hours at a time. We already mentioned leaving your desk from time to time at work. The same goes for when you get home, especially if you sit at a computer all day. Inactivity can lead to heart disease and weight gain. Take a look at what your city or town has to offer — go to a museum, play at the park with your kids, or simply walk the dog. The more active you are, the healthier you’ll be.</p>
 <hr>
-<p><b>(15)   Do try a new activity. Exercise both your mind and body by trying something new. Studies have shown that the more your brain learns, the more we creative become at home and at work. Tackle that new Pilates class offered by your town’s parks and recreation department. Buy a yoga DVD and learn some new poses. By expanding your mind, and working out at the same time, you’ll be better prepared for problems down the road, armed with a healthy body and a mind ready to look at all sides of any issue.</b></p>
-<hr><br>
+<p>(15)   Do try a new activity. Exercise both your mind and body by trying something new. Studies have shown that the more your brain learns, the more we creative become at home and at work. Tackle that new Pilates class offered by your town’s parks and recreation department. Buy a yoga DVD and learn some new poses. By expanding your mind, and working out at the same time, you’ll be better prepared for problems down the road, armed with a healthy body and a mind ready to look at all sides of any issue.</p><hr></div><br>
+
+<div class="ex1"><br>
 
 <img src="health1.jpg" width="100%" height="100%">
-</div>
+
+<br><br></div>
 
 
 
@@ -532,10 +661,15 @@ function myFunction() {
 
 </script>
 
-<br><br>
+
+<br>
+
+<div class="ex1">
  <hr>
-  <table width="100%" border="0"><tr><td>
-      <h1 style="font-family: verdana" align="center"><font color="black"> Government's Social Helpdesk</font></h1></td></tr></table>
+  <table width="100%" border="0">
+
+    <tr><td>
+      <h2 style="font-family: verdana" align="center"><font color="white"> Government's Social Helpdesk</font></h2></td></tr></table>
 <table width="100%" border="0">
       <tr><th><a href="https://www.facebook.com/MyGovIndia/" class="fa fa-facebook"></a></th>
 
@@ -554,7 +688,10 @@ function myFunction() {
      <th> <a href="https://t.me/MyGovCoronaNewsdesk" class="fa fa-telegram"></a></th></tr></table>
     
 <hr>
-<br><br>
+
+</div>
+<br>
+
 
  <table width="100%" border="0"><tr><th><img src="banner.jpg" width=100%; height=500px></th></tr>
 
