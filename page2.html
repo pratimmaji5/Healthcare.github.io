@@ -11,12 +11,14 @@
 
   gtag('config', 'UA-167487542-1');
 </script>
-
-
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <title>Healthcare</title>
 <style>
@@ -25,40 +27,16 @@
 }
 
 body {
-  font-family: Arial;
-  padding: 0px;
-  background: skyblue;
-}
+    font: sans-serif;
+    color: #777;
+  }
 
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
+h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
 
 
 /*back to top button*/
@@ -71,7 +49,7 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: #111;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -140,18 +118,6 @@ body {
 
 
 
-/* Header/Blog Title */
-.header {
-  padding: 80px;
-  font-family: 'Sofia';
-  text-align: center;
-  background: #1abc9c;
-}
-
-.header h1 {
-  font-size: 50px;
-  
-}
 
 /* Footer */
 .footer {
@@ -161,19 +127,40 @@ body {
   margin-top: 0px;
 }
 
+
+
 div.ex1 {
   width: 100%;
   padding: 50px;
+  font-size: 30px;
   box-sizing: border-box;
-  background-color: lightblue;
+  background-color: #2d2d30;
 }
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-.container {
+.container1 {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -191,28 +178,6 @@ img {
   border: none;
 }
 
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 
 
 @media screen and (max-width: 600px) {
@@ -246,9 +211,9 @@ img {
     div.ex1 {
   width: 100%;
   padding: 10px;
-  font-size: 10px;
+  font-size: 15px;
   box-sizing: border-box;
-  background-color: lightblue;
+  background-color: #2d2d30;
 }
 }
 
@@ -273,6 +238,9 @@ img {
   
 }
 }
+
+
+
 
 @media screen and (max-width: 600px) {
     
@@ -312,14 +280,124 @@ img {
 }
 
 
-</style>
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+
+
+
+
+.carousel-inner img {
+    
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  
+  
+ @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  
+  
+  
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 13px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  
+  </style>
+
+
+
 </head>
 
 
 
 
 
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
@@ -347,52 +425,97 @@ function topFunction() {
 </script>
 
 
-<div class="header">
-  <h1>Healthcare</h1>
-  <h2>We Care For Your Health Every Moment During This Pandemic</h2>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><font color="white" size="6">Healthcare</font></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="page1.html">ABOUT HEALTH AND HYGIENE</a></li>
+        <li><a href="page2.html">ABOUT WHO</a></li>
+        <li><a href="page3.html">ABOUT COVID-19</a></li>
+        <li><a href="page4.html">WHO GUIDELINES</a></li>
+        <li><a href="page5.html">HEALTH AND HYGIENE CHART</a></li>
+        <li><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">HELPLINE NO.</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe-nYBiJP9U8KByuQlThuaT1TBWk78IhORmjgILjMpkopIENg/viewform?usp=sf_link">FEEDBACK</a></li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="n.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h4>during this pandemic</h4>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="n1.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h4>during this pandemic</h4>
+        </div>      
+      </div>
+    
+      
+      <div class="item">
+        <img src="n2.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h4>during this pandemic</h4>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
 </div>
 
-
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="page1.html">About Health and Hygiene</a>
-  <a href="page2.html">About WHO</a>
-  <a href="page3.html">About COVID-19</a>
-  <a href="page4.html">WHO guidelines</a>
-  <a href="page5.html">Health and hygiene chart</a>
-  <a href="page6.html">Flow chart</a>
-  <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline no.</a>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-nYBiJP9U8KByuQlThuaT1TBWk78IhORmjgILjMpkopIENg/viewform?usp=sf_link">Helpdesk & Feedback</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
 
 <br>
 
 <div class="ex1">
-<h1  style="font-family: verdana" align="center">ABOUT WHO</h1><br>
+<h1 align="center"><font color="white">About WHO</font></h1><br>
 
-<img src="who5.jpg" width="100%" height="500px"></div>
+<table width="100%"><tr><td align="center"><img src="who5.jpg" width="80%"></td></tr></table><br></div>
 
 
-
+<br>
 <div class="ex1">
 
-<hr>
-<h2>Better health for everyone, everywhere</h2>
+
+<h2><font color="white">Better health for everyone, everywhere</font></h2><hr>
 <p><b>We are building a better, healthier future for people all over the world.</b></p>
 
 <P><b>Working with 194 Member States, across six regions, and from more than 150 offices, WHO staff are united in a shared commitment to achieve better health for everyone, everywhere.</b></P>
@@ -400,25 +523,28 @@ function myFunction() {
 <P><b>Together we strive to combat diseases – communicable diseases like influenza and HIV, and noncommunicable diseases like cancer and heart disease.</b></P>
 
 <p><b>We help mothers and children survive and thrive so they can look forward to a healthy old age. We ensure the safety of the air people breathe, the food they eat, the water they drink – and the medicines and vaccines they need.</b></p><hr>
-<br>
-<br>
-
-<img src="who 3.jpg" width="100%" height="500px">
-
 </div>
+
+<br>
+<div class="ex1"><br>
+<table width="100%"><tr><td align="center"><img src="who 3.jpg" width="80%"></td></tr></table><br></div>
+<br>
+
+
+
 
 <div class="ex1">
 
-  <h2>Introduction about WHO(WORLD HEALTH ORGANIZATION) :</h2>
+  <h2><font color="white">Introduction about WHO(WORLD HEALTH ORGANIZATION) :</font></h2><hr>
   <p><b>The World Health Organization (WHO) is a specialized agency of the United Nations responsible for international public health.The WHO Constitution, which establishes the agency's governing structure and principles, states its main objective as "the attainment by all peoples of the highest possible level of health."It is headquartered in Geneva, Switzerland, with six semi-autonomous regional offices and 150 field offices worldwide.</b></p>
 <hr>
-  <p><b>HEADS :</b><a href="https://en.wikipedia.org/wiki/Tedros_Adhanom"> Tedros Adhanom  </a>,<a href="https://en.wikipedia.org/wiki/Soumya_Swaminathan_(scientist)">Soumya Swaminathan  </a>,<a href="https://en.wikipedia.org/wiki/Jane_Ellison">Jane Ellison  </a>,<a href="https://en.wikipedia.org/wiki/Peter_Salama">Peter Salama </a>.</p>
+  <p><font color="white">HEADS :</font><a href="https://en.wikipedia.org/wiki/Tedros_Adhanom"> Tedros Adhanom  </a>,<a href="https://en.wikipedia.org/wiki/Soumya_Swaminathan_(scientist)">Soumya Swaminathan  </a>,<a href="https://en.wikipedia.org/wiki/Jane_Ellison">Jane Ellison  </a>,<a href="https://en.wikipedia.org/wiki/Peter_Salama">Peter Salama </a>.</p>
 
-<p><b>HEADQUARTERS :</b><a href="https://en.wikipedia.org/wiki/Geneva"> Geneva ,Switzerland</a>.</p>
+<p><font color="white">HEADQUARTERS :</font><a href="https://en.wikipedia.org/wiki/Geneva"> Geneva ,Switzerland</a>.</p>
 
 <p><b>FOUNDED :</b> 7 April, 1948</p>
 
-<p><b>PARENT ORGANIZATION :</b> <a href="https://en.wikipedia.org/wiki/United_Nations_Economic_and_Social_Council">United Nations Economic and Social Council</a></p>
+<p><font color="white">PARENT ORGANIZATION :</font><a href="https://en.wikipedia.org/wiki/United_Nations_Economic_and_Social_Council">United Nations Economic and Social Council</a></p>
 <hr>
 <p><b>The WHO was established in 7 April 1948, which is commemorated as World Health Day.The first meeting of the World Health Assembly (WHA), the agency's governing body, took place on 24 July 1948. The WHO incorporated the assets, personnel, and duties of the League of Nations' Health Organisation and the Office International d'Hygiène Publique, including the International Classification of Diseases.Its work began in earnest in 1951 following a significant infusion of financial and technical resources.</b></p>
 
@@ -429,8 +555,8 @@ function myFunction() {
 <p><b>The WHA, composed of representatives from all 194 member states, serves as the agency's supreme decision-making body. It also elects and advises an Executive Board made up of 34 health specialists. The WHA convenes annually and is responsible for selecting the Director-General, setting goals and priorities, and approving the WHO's budget and activities. The current Director-General is Tedros Adhanom, former Health Minister and Foreign Minister of Ethiopia, who began his five-year term on 1 July 2017.</b></p>
 
 <P><b>The WHO relies on assessed and voluntary contributions from member states and private donors for funding. As of 2018, it has a budget of over $4.2 billion, most of which comes from voluntary contributions from member states.The agency is part of the United Nations Sustainable Development Group.</b></p>
- <h2 align="center"> <a href="https://en.wikipedia.org/wiki/World_Health_Organization">click here</a> to know more about WHO.</h2>
- <h2 align="center"> <a href="https://www.who.int/">click here</a> to visit WHO official website.</h2></P>
+ <h2 align="center"><font color="white"> <a href="https://en.wikipedia.org/wiki/World_Health_Organization">click here</a> to know more about WHO.</font></h2>
+ <h2 align="center"> <font color="white"><a href="https://www.who.int/">click here</a> to visit WHO official website.</font></h2></P>
 
 </div>
 
@@ -470,10 +596,13 @@ function myFunction() {
 
 </script>
 
-<br><br>
+<br>
+<div class="ex1">
  <hr>
-  <table width="100%" border="0"><tr><td>
-      <h1 style="font-family: verdana" align="center"><font color="black"> Government's Social Helpdesk</font></h1></td></tr></table>
+  <table width="100%" border="0">
+
+    <tr><td>
+      <h2 style="font-family: verdana" align="center"><font color="white"> Government's Social Helpdesk</font></h2></td></tr></table>
 <table width="100%" border="0">
       <tr><th><a href="https://www.facebook.com/MyGovIndia/" class="fa fa-facebook"></a></th>
 
@@ -492,7 +621,9 @@ function myFunction() {
      <th> <a href="https://t.me/MyGovCoronaNewsdesk" class="fa fa-telegram"></a></th></tr></table>
     
 <hr>
-<br><br>
+
+</div><br>
+
 
  <table width="100%" border="0"><tr><th><img src="banner.jpg" width=100%; height=500px></th></tr>
 
