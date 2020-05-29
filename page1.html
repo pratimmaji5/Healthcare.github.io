@@ -11,13 +11,14 @@
 
   gtag('config', 'UA-167487542-1');
 </script>
-
-
-
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <title>Healthcare</title>
 <style>
@@ -26,40 +27,16 @@
 }
 
 body {
-  font-family: Arial;
-  padding: 0px;
-  background: skyblue;
-}
+    font: sans-serif;
+    color: #777;
+  }
 
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
+h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
 
 
 /*back to top button*/
@@ -139,20 +116,82 @@ body {
   color: white;
 }
 
-
-
-/* Header/Blog Title */
-.header {
-  padding: 80px;
-  font-family: 'Sofia';
+.button {
+  border: none;
+  color: white;
+  padding: 10px 10px;
   text-align: center;
-  background: #1abc9c;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  margin: 16px 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-.header h1 {
-  font-size: 50px;
-  
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 5px solid #cc0000;
+  border-radius: 12px;
 }
+
+.button1:hover {
+  background-color: #cc0000;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 5px solid #0066ff;
+  border-radius: 12px;
+}
+
+.button2:hover {
+  background-color: #0066ff;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 5px solid #2d8659;
+  border-radius: 12px;
+}
+
+.button3:hover {
+  background-color: #2d8659;
+  color: white;
+}
+
+
+.button4 {
+  background-color: white; 
+  color: black; 
+  border: 5px solid #e6b800;
+  border-radius: 12px;
+}
+
+.button4:hover {
+  background-color: #e6b800;
+  color: white;
+}
+
+
+.button5 {
+  background-color: white; 
+  color: black; 
+  border: 5px solid #e65c00;
+  border-radius: 12px;
+}
+
+.button5:hover {
+  background-color: #e65c00;
+  color: white;
+}
+
+
 
 /* Footer */
 .footer {
@@ -162,19 +201,40 @@ body {
   margin-top: 0px;
 }
 
+
+
 div.ex1 {
   width: 100%;
   padding: 50px;
+  font-size: 30px;
   box-sizing: border-box;
-  background-color: lightblue;
+  background-color: #2d2d30;
 }
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-.container {
+.container1 {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -192,28 +252,6 @@ img {
   border: none;
 }
 
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 
 
 @media screen and (max-width: 600px) {
@@ -247,9 +285,9 @@ img {
     div.ex1 {
   width: 100%;
   padding: 10px;
-  font-size: 10px;
+  font-size: 15px;
   box-sizing: border-box;
-  background-color: lightblue;
+  background-color: #2d2d30;
 }
 }
 
@@ -274,6 +312,45 @@ img {
   
 }
 }
+
+
+@media screen and (max-width: 600px) {
+    
+ .button {
+  padding: 5px 2px;
+  font-size: 10px;
+  margin: 8px 4px;
+  
+}
+
+.button1 {
+  border: 5px;
+  border-radius: 8px;
+  }
+
+.button2 {
+  border: 5px;
+  border-radius: 8px;
+  }
+
+.button3 {
+  border: 5px;
+  border-radius: 8px;
+  }
+
+.button4 {
+  border: 5px;
+  border-radius: 8px;
+  }
+
+
+.button5 {
+  border: 5px;
+  border-radius: 8px;
+  }
+
+}
+
 
 @media screen and (max-width: 600px) {
     
@@ -313,14 +390,124 @@ img {
 }
 
 
-</style>
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+
+
+
+
+.carousel-inner img {
+    
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  
+  
+ @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  
+  
+  
+
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 13px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  
+  </style>
+
+
+
 </head>
 
 
 
 
 
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
@@ -348,75 +535,121 @@ function topFunction() {
 </script>
 
 
-<div class="header">
-  <h1>Healthcare</h1>
-  <h2>We Care For Your Health Every Moment During This Pandemic</h2>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><font color="white" size="6">Healthcare</font></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="page1.html">ABOUT HEALTH AND HYGIENE</a></li>
+        <li><a href="page2.html">ABOUT WHO</a></li>
+        <li><a href="page3.html">ABOUT COVID-19</a></li>
+        <li><a href="page4.html">WHO GUIDELINES</a></li>
+        <li><a href="page5.html">HEALTH AND HYGIENE CHART</a></li>
+        <li><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">HELPLINE NO.</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe-nYBiJP9U8KByuQlThuaT1TBWk78IhORmjgILjMpkopIENg/viewform?usp=sf_link">FEEDBACK</a></li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="n.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h4>during this pandemic</h4>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="n1.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h4>during this pandemic</h4>
+        </div>      
+      </div>
+    
+      
+      <div class="item">
+        <img src="n2.jpg" width="1200" height="500px">
+        <div class="carousel-caption">
+          <h3>We care for your health every moment</h3>
+          <h4>during this pandemic</h4>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
 </div>
 
-
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">Home</a>
-  <a href="page1.html">About Health and Hygiene</a>
-  <a href="page2.html">About WHO</a>
-  <a href="page3.html">About COVID-19</a>
-  <a href="page4.html">WHO guidelines</a>
-  <a href="page5.html">Health and hygiene chart</a>
-  <a href="page6.html">Flow chart</a>
-  <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline no.</a>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe-nYBiJP9U8KByuQlThuaT1TBWk78IhORmjgILjMpkopIENg/viewform?usp=sf_link">Helpdesk & Feedback</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
 
 <br>
 
 <div class="ex1">
-<h1 style="font-family: verdana" align="center">WHAT IS HEALTH & HYGIENE</h1><hr>
-<h3 style="font-family: verdana">A healthy life is a dream of each individual. World Health Organization (WHO) declared April 7th as World Health Day.This is celebrated with the goal of creating awareness among each individual.For being healthy we need to know the actual meaning of health and hygiene. Let us discuss more on health and hygiene.</h3>
+<h1 align="center"><font color="white">WHAT IS HEALTH & HYGIENE</font></h1><hr>
+<p><font color="white">A healthy life is a dream of each individual. World Health Organization (WHO) declared April 7th as World Health Day.This is celebrated with the goal of creating awareness among each individual.For being healthy we need to know the actual meaning of health and hygiene. Let us discuss more on health and hygiene.</font></p>
 
-<h3 style="font-family: verdana">According to WHO, health is“a complete state of physical, mental and social well-being, and not merely the absence of disease or infirmity.” As per the definition, a person cannot be said to be healthy merely by a disease-free condition.He/ she should be physically as well as mentally healthy. This demands a hygienic condition.Health and hygiene are two correlated terms.</h3><hr>
+<p><font color="white">According to WHO, health is“a complete state of physical, mental and social well-being, and not merely the absence of disease or infirmity.” As per the definition, a person cannot be said to be healthy merely by a disease-free condition.He/ she should be physically as well as mentally healthy. This demands a hygienic condition.Health and hygiene are two correlated terms.</font></p><hr>
 </div>
   <br>  
 <table width="100%"><tr><td align="center"><img src="p7.jpg" width="80%" height="500px"></td></tr></table>
 <br>
-<table width="100%"><tr><td align="center"><img src="p9.jpg" width="80%" height="500px"></td></tr></table>
+<table width="100%"><tr><td align="center"><img src="p9.jpg" width="80%" height="500px"></td></tr></table><br>
 <div class="ex1">
-<h2 align="center ">Tips for maintaining your proper hygiene :</h2><br>
-  <h3>Personal Hygiene Habit # 1</h3>
+<h2 align="center "><font color="white">Tips for maintaining your proper hygiene :</font></h2><br>
+<hr>
+  <p><font color="white" size="4">Personal Hygiene Habit # 1</font></p>
 <p><b>Shower daily
 Rinse out all the soap
 Make sure your intimates are not tight; cotton is a preferred material
 It is recommended that after motions,you must wash up or wipe from front to back.</b></p><hr>
-<h3>Personal Hygiene Habit # 2</h3>
+<p><font color="white" size="4">Personal Hygiene Habit # 2</font></p>
 <p><b>For Food storage
 Store and prepare raw meat, poultry, and seafood away from other foods
 Store food in the fridge at 5°C/41°F, do not overfill and allow cold air to circulate
 Prevent raw food juices from dripping onto other foods.</b></p><hr>
-<h3>Personal Hygiene Habit # 3</h3>
+<p><font color="white" size="4">Personal Hygiene Habit # 3</font></p>
 <p><b>While preparing your food
 Cut meat and vegetables with separate knives and chopping/cutting boards
 Soak, scrape, brush, scald, peel or wash all fruit, salad and vegetables
 Do not wash raw meat in the sink prior to cooking as this spreads germs around the sink area. This is also not necessary as proper cooking of the meat will destroy any harmful bacteria.</b></p><hr>
-<h3>Personal Hygiene Habit # 4</h3>
+<p><font color="white" size="4">Personal Hygiene Habit # 4</font></p>
 <p><b>Peeing etiquettes
 Don't hold it in
 Stay hydrated
 Relax when you pee
 Wipe from front to back.</b></p><hr>
-<h3>Personal Hygiene Habit # 5</h3>
+<p><font color="white" size="4">Personal Hygiene Habit # 5</font></p>
 <p><b>Fighting bad breath
 Drink plenty of water.
 Brush and floss regularly.
@@ -431,23 +664,23 @@ Avoid tobacco products.</b></p><hr>
 <table width="100%"><tr><td align="center"><img src="p8.jpg" width="80%" height="500px"></td></tr></table>
 <hr>
 
-<h3>Personal Hygiene Habit# 6</h3>
+<p><font color="white" size="4">Personal Hygiene Habit # 6</font></p>
 <p><b>Cleaning and disinfection of office work spaces.
 Viruses are breeding round the clock, especially when it comes to hard surfaces, like office desks, office floors and so on.
 Make sure your office administration staff routinely cleans door handles, countertops, keyboards and doorknobs with anti-bacterial solution to remove the germs.</b></p><hr>
-<h3>Personal Hygiene Habit# 7</h3>
+<p><font color="white" size="4">Personal Hygiene Habit # 7</font></p>
 <p><b>Go for an alcohol-based sanitizer.
 Clean your hands every now and then by using hand sanitizers. This is because alcohol is a drying agent and kills all the viruses and bacterias immediately.
 However, please note alcohol is liable to make your skin dry, thus always go for a branded alcohol-based fragrance-free hand sanitizer, which has a good amount of moisturizer in it.</b></p><hr>
-<h3>Personal Hygiene Habit# 8</h3>
+<p><font color="white" size="4">Personal Hygiene Habit # 8</font></p>
 <p><b>Office pantry etiquette.
 The office pantry is a very tricky place – you can’t avoid it, but nor can you be friends with it. The best practice is to carry your own coffee and tea mugs and wash them at least twice a day. If you are not so sure about your office hygiene, get your own tissue roll from home and store your office snacks in a clean and safe drawer.</b></p><hr>
-<h3>Personal Hygiene Habit# 9</h3>
+<p><font color="white" size="4">Personal Hygiene Habit # 9</font></p>
 <p><b>Makeup hygiene
 Eyebrow pencil hygiene is a must. Always ensure that you clean your eyebrow pencil with a wet tissue before usage in order to get rid of bacterial residue.
 Wash your makeup brush and powder puffs on a weekly basis with a mild baby shampoo for best and safe usage. Dry the washed makeup product by using a clean towel.
 Never use your fingers to apply makeup, unless and until a profesional artist does that for you. But, if you must use your fingers, then make sure they're clean and that you use just the ring finger as it has the lightest stroke.</b></p><hr>
-<h3>Personal Hygiene Habit# 10</h3>
+<p><font color="white" size="4">Personal Hygiene Habit # 10</font></p>
 <p><b>Brushing hygiene
 Brush your teeth twice a day for at least 3-5 minutes. Make sure you do not put too much pressure as this can hurt your gums.
 Place the bristles along the gum line at a 45-degree angle. Gently brush the outer tooth surfaces of 2-3 teeth using a vibrating back and forth motion. Clean outer, inner and biting surfaces of teeth with scrubbing motion.
@@ -457,7 +690,7 @@ Clean and brush the surface of your tongue daily because there is bacteria prese
 
 <p><img src="health4.png" width="100%" height="500px"></p>
 
-<h2 align="center"><a href="https://en.wikipedia.org/wiki/Hygiene">Click Here</a> To Know More About Hygiene.</h2>
+<h2 align="center"><font color="white"><a href="https://en.wikipedia.org/wiki/Hygiene">Click Here</a> To Know More About Hygiene.</font></h2>
 </div>
 
 
@@ -496,10 +729,13 @@ function myFunction() {
 
 </script>
 
-<br><br>
+<br>
+<div class="ex1">
  <hr>
-  <table width="100%" border="0"><tr><td>
-      <h1 style="font-family: verdana" align="center"><font color="black"> Government's Social Helpdesk</font></h1></td></tr></table>
+  <table width="100%" border="0">
+
+    <tr><td>
+      <h2 style="font-family: verdana" align="center"><font color="white"> Government's Social Helpdesk</font></h2></td></tr></table>
 <table width="100%" border="0">
       <tr><th><a href="https://www.facebook.com/MyGovIndia/" class="fa fa-facebook"></a></th>
 
@@ -518,7 +754,8 @@ function myFunction() {
      <th> <a href="https://t.me/MyGovCoronaNewsdesk" class="fa fa-telegram"></a></th></tr></table>
     
 <hr>
-<br><br>
+
+</div><br>
 
  <table width="100%" border="0"><tr><th><img src="banner.jpg" width=100%; height=500px></th></tr>
 
@@ -533,7 +770,7 @@ function myFunction() {
   <h6><font color="#b3b3cc">You can individually contact with the developers by E-mail</font></h6>
   <h5><font color="#b3b3cc"><a href="mailto:mitrahul008@gmail.com">Arijit Mitra-mitrarahul008@gmail.com </a></font></h5>
   <h5><font color="#b3b3cc"><a href="mailto:pratimmaji2@gmail.com">Pratim Maji-pratimmaji2@gmail.com</a></font></h5>
-  <h3><font color="#b3b3cc">THANKS FOR VISITING OUR WEBSITE</font></h3>
+  <h2><font color="#b3b3cc">THANKS FOR VISITING OUR WEBSITE</font></h2>
 </div></td></tr></table>
 
 </body></html>
