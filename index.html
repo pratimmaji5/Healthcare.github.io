@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -33,9 +35,9 @@ body {
 
 h3, h4 {
     margin: 10px 0 30px 0;
-    letter-spacing: 10px;      
+    letter-spacing: 8px;      
     font-size: 20px;
-    color: #111;
+    color: white;
   }
 
 
@@ -116,86 +118,13 @@ h3, h4 {
   color: white;
 }
 
-.button {
-  border: none;
-  color: white;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 23px;
-  margin: 16px 8px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
 
-.button1 {
-  background-color: white; 
-  color: black; 
-  border: 3px solid #cc0000;
-  border-radius: 12px;
-}
-
-.button1:hover {
-  background-color: #cc0000;
-  color: white;
-}
-
-.button2 {
-  background-color: white; 
-  color: black; 
-  border: 3px solid #0066ff;
-  border-radius: 12px;
-}
-
-.button2:hover {
-  background-color: #0066ff;
-  color: white;
-}
-
-.button3 {
-  background-color: white; 
-  color: black; 
-  border: 3px solid #2d8659;
-  border-radius: 12px;
-}
-
-.button3:hover {
-  background-color: #2d8659;
-  color: white;
-}
-
-
-.button4 {
-  background-color: white; 
-  color: black; 
-  border: 3px solid #e6b800;
-  border-radius: 12px;
-}
-
-.button4:hover {
-  background-color: #e6b800;
-  color: white;
-}
-
-
-.button5 {
-  background-color: white; 
-  color: black; 
-  border: 3px solid #e65c00;
-  border-radius: 12px;
-}
-
-.button5:hover {
-  background-color: #e65c00;
-  color: white;
-}
 
 
 .button6 {
   border: none;
   color: white;
-  padding: 10px 375px;
+ 
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -208,7 +137,7 @@ h3, h4 {
 .button61 {
   background-color: white; 
   color: black; 
-  border: 3px solid #e65c00;
+  border: 1px solid #e65c00;
   border-radius: 12px;
 }
 
@@ -276,7 +205,7 @@ h3, h4 {
 div.ex1 {
   width: 100%;
   padding: 50px;
-  font-size: 30px;
+  font-size: 23px;
   box-sizing: border-box;
   background-color: #2d2d30;
 }
@@ -299,10 +228,7 @@ div.ex1 {
 
 
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+ 
 
 .container1 {
   position: relative;
@@ -385,43 +311,6 @@ img {
 
 
 
-@media screen and (max-width: 600px) {
-    
- .button {
-  padding: 5px 2px;
-  font-size: 10px;
-  margin: 8px 4px;
-  
-}
-
-.button1 {
-  border: 5px;
-  border-radius: 8px;
-  }
-
-.button2 {
-  border: 5px;
-  border-radius: 8px;
-  }
-
-.button3 {
-  border: 5px;
-  border-radius: 8px;
-  }
-
-.button4 {
-  border: 5px;
-  border-radius: 8px;
-  }
-
-
-.button5 {
-  border: 5px;
-  border-radius: 8px;
-  }
-
-}
-
 
 
 @media screen and (max-width: 600px) {
@@ -429,7 +318,7 @@ img {
  .button6 {
   border: none;
   color: white;
-  padding: 7px 80px;
+  
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -537,11 +426,7 @@ input[type=submit]:hover {
   }
   
   
- @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
+
   
   
   
@@ -569,6 +454,52 @@ input[type=submit]:hover {
     border-color: transparent;
   }
 
+.containerex {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.containerex img {vertical-align: middle;}
+
+.containerex .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 90%;
+  padding: 10px;
+}
+
+.containerex:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+
+h3 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 2px;      
+    font-size: 6px;
+    color: white;
+  }
+
+  h1 {
+    margin: 10px 0 30px 0;
+    
+    font-size: 10px;
+    color: white;
+  }
+
+  
+  .containerex .content {
+  width: 90%;
+  padding: 0px;
+}
+
+
+}
 
 
 
@@ -624,7 +555,7 @@ function topFunction() {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage"><font color="white" size="6">Healthcare</font></a>
+      <a class="navbar-brand" href="#myPage" ><font color="white" size="6" style="font-family: 'Merienda', cursive;">Healthcare</font></a>
       </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -635,8 +566,7 @@ function topFunction() {
         <li><a href="page4.html">WHO GUIDELINES</a></li>
         <li><a href="page5.html">HEALTH AND HYGIENE CHART</a></li>
         <li><a href="page6.html">FLOW CHART</a></li>
-        <li><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="blank">HELPLINE NO.</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe-nYBiJP9U8KByuQlThuaT1TBWk78IhORmjgILjMpkopIENg/viewform?usp=sf_link" target="blank">FEEDBACK</a></li>
+        
         
         
       </ul>
@@ -659,16 +589,16 @@ function topFunction() {
       <div class="item active">
         <img src="n.jpg" width="1200" height="500px">
         <div class="carousel-caption">
-          <h3>We care for your health every moment</h3>
-          <h4>during this pandemic</h4>
+          <h1>We care for your health every moment</h1>
+          <h3>during this pandemic</h3>
         </div>      
       </div>
 
       <div class="item">
         <img src="n1.jpg" width="1200" height="500px">
         <div class="carousel-caption">
-          <h3>We care for your health every moment</h3>
-          <h4>during this pandemic</h4>
+          <h1>We care for your health every moment</h1>
+          <h3>during this pandemic</h3>
         </div>      
       </div>
     
@@ -676,8 +606,8 @@ function topFunction() {
       <div class="item">
         <img src="n2.jpg" width="1200" height="500px">
         <div class="carousel-caption">
-          <h3>We care for your health every moment</h3>
-          <h4>during this pandemic</h4>
+          <h1>We care for your health every moment</h1>
+          <h3>during this pandemic</h3>
         </div>      
       </div>
     </div>
@@ -757,48 +687,99 @@ function myFunction() {
 
 <p><font color="white">The pandemic has caused global social and economic disruption,including the largest global recession since the Great Depression.It has led to the postponement or cancellation of sporting, religious, political, and cultural events,widespread supply shortages exacerbated by panic buying,and decreased emissions of pollutants and greenhouse gases. Schools, universities, and colleges are currently closed either on a nationwide or local basis in 185 countries, affecting approximately 98.5 percent of the world's student population.Misinformation about the virus has spread online,and there have been incidents of xenophobia and discrimination against Chinese people and against those perceived as being Chinese or as being from areas with high infection rates.</font></p>
 </div>
-<br>
-<table width="100%"><tr>
-  <th><img src="p1.jpg" width="100%" height="100%"></th>
-  
-  <th><img src="p2.jpg" width="100%" height="100%"></th>
-</tr></table>
-<br>
+<br><div class="ex1"></div><br>
 
-<div class="ex1">
-<table width="100%" border="0">
 
-<tr>
- <th><a href="https://static.mygov.in/rest/s3fs-public/mygov_158831498053877021.pdf" target="blank" ><button class="button button1">Hotspot Areas</button></a></th>
 
-<th><a href="https://www.mygov.in/corona-data/covid19-statewise-status" target="blank"><button class="button button2">State/District Wise Details</button></a></th>
 
-<th><a href="https://covid.apollo247.com/" target="blank"><button class="button button3">Coronavirus risk scan</button></a></th>
 
-<th><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms" target="blank"><button class="button button4">Q&A on COVID-19</button></a></th>
-
-<th><a href="https://www.pmcares.gov.in/en/" target="blank"><button class="button button5">Donate to PM cares</button></a></th>
-<hr></tr></table><hr>
+<table width="100%" border="0"><tr>
+  <td align="center">
+<div class="containerex"><a href="https://static.mygov.in/rest/s3fs-public/mygov_158831498053877021.pdf" target="blank" >
+  <img src="b1.jpg" alt="Notebook" style="width:80%; height:100%">
+  <div class="content">
+    <h1 style="font-family: 'Aclonica', sans-serif;">Hotspot Areas</h1>
+    <h3>Click here if you want to know Hotspot areas near you</h3>
+  </div></a>
 </div>
-<br>
+</td>
+<td align="center">
+  <div class="containerex"><a href="https://www.mygov.in/corona-data/covid19-statewise-status" target="blank">
+  <img src="p2.jpg" alt="Notebook" style="width:80%; height: 100%">
+  <div class="content">
+    <h1 style="font-family: 'Aclonica', sans-serif;">State/District Wise Details</h1>
+    <h3>Click here if you want to know your state/district wise details</h3>
+  </div></a>
+</div>
+</td></tr></table>
 
 
-<div class="ex1"><hr>
-<table width="100%" border="0"><tr><th align="center">
-  <a href="https://news.google.com/covid19/map?hl=en-IN&mid=/m/086g2&gl=IN&ceid=IN:en" target="blank"><button class="button6 button61">Click here to get more news about COVID-19</button></a></th></tr>
+
+<br><div class="ex1"></div><br>
+
+
+
+<table width="100%" border="0"><tr>
+  <td align="center">
+<div class="containerex"><a href="https://covid.apollo247.com/" target="blank">
+  <img src="p1.jpg" alt="Notebook" style="width:80%; height:100%">
+  <div class="content">
+    <h1 style="font-family: 'Aclonica', sans-serif;">Coronavirus risk scan</h1>
+    <h3>Click here if you want to check your COVID-19 risk</h3></div></a>
+</div>
+</td>
+<td align="center">
+  <div class="containerex"><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="blank">
+  <img src="b2.jpg" alt="Notebook" style="width:80%;height:100%">
+  <div class="content">
+    <h1 style="font-family: 'Aclonica', sans-serif;">Helpline no.</h1>
+    <h3>Click here if you want helpline number according to your district and state</h3>
+  </div></a>
+</div>
+</td></tr></table>
+
+<br><div class="ex1"></div><br>
+
+<table width="100%" border="0"><tr>
+  <td align="center">
+<div class="containerex"><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms" target="blank">
+  <img src="b3.jpg" alt="Notebook" style="width:80%; height:100%">
+  <div class="content">
+    <h1 style="font-family: 'Aclonica', sans-serif;">Q&A on COVID-19</h1>
+    <h3>Click here for FAQ from WHO official website</h3>
+  </div></a>
+</div>
+</td>
+<td align="center">
+  <div class="containerex"><a href="https://www.pmcares.gov.in/en/" target="blank">
+  <img src="b4.jpg" alt="Notebook" style="width:80%; height:100%">
+  <div class="content">
+    <h1 style="font-family: 'Aclonica', sans-serif;">Donate to PM cares</h1>
+    <h3>Click here if you want to donate to PM fund</h3>
+  </div></a>
+</div>
+</td></tr></table>
+
+<br><div class="ex1"></div><br>
+
+
+
+
+<table width="100%" border="0"><tr><td align="center">
+  <a href="https://news.google.com/covid19/map?hl=en-IN&mid=/m/086g2&gl=IN&ceid=IN:en" target="blank"><button class="button6 button61">Click here to get more news about COVID-19</button></a></td></tr>
 <tr>
-  <th align="center">
-  <a href="http://wa.me/41798931892?text=hi" target="blank"><button class="button6 button62">Click here to get instant information about COVID-19 from WHO through whatsapp chat</button></a></th>
+  <td align="center">
+  <a href="http://wa.me/41798931892?text=hi" target="blank"><button class="button6 button62">Click here to get instant information about COVID-19 from WHO through whatsapp chat</button></a></td>
 
 
 
 
-</tr></table><hr></div>
+</tr></table>
   
 
 
 
-<br>
+<br><div class="ex1"></div><br>
 <div class="ex1"><br>
 <table width="100%"><tr><td align="center"><img src="p4.jpg" width="80%"></td></tr></table><br></div>
 
@@ -875,7 +856,7 @@ function myFunction() {
   <h5><font color="#b3b3cc"><a href="mailto:mitrahul008@gmail.com">Arijit Mitra-mitrarahul008@gmail.com </a></font></h5>
   <h5><font color="#b3b3cc"><a href="mailto:pratimmaji2@gmail.com">Pratim Maji-pratimmaji2@gmail.com</a></font></h5>
   <a href="page1.html" class="next1">Next Page &raquo;</a>
-  <h3><font color="#b3b3cc">THANKS FOR VISITING OUR WEBSITE</font></h3>
+  <h1 style="font-family: 'Aclonica', sans-serif;">THANKS FOR VISITING OUR WEBSITE</font></h1>
 </div></td></tr></table>
 
 
