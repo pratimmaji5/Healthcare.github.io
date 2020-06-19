@@ -4,6 +4,7 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167487542-1"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -11,14 +12,16 @@
 
   gtag('config', 'UA-167487542-1');
 </script>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <title>Healthcare</title>
 <style>
@@ -211,7 +214,7 @@ img {
 }
 
 
-
+/* social media logo on smaller screen */
 @media screen and (max-width: 600px) {
   .fa {
   
@@ -250,30 +253,7 @@ img {
 }
 
 
-@media screen and (max-width: 600px) {
-    
-    .header {
-  padding: 50px;
-  font-family: 'Sofia';
-  text-align: center;
-  background: #1abc9c;
-}
-
-.header h1 {
-  font-size: 50px;
-  
-}
-
-
-.header h2 {
-  font-size: 20px;
-  
-}
-}
-
-
-
-
+/* footer on smaller screen */
 @media screen and (max-width: 600px) {
     
  .footer {
@@ -299,6 +279,7 @@ img {
 
 }
 
+/* button on smaller screen */
 @media screen and (max-width: 600px) {
 #myBtn {
   
@@ -310,10 +291,6 @@ img {
   border-radius: 2px;
 }
 }
-
-
-
-
 
 
 input[type=text], select, textarea {
@@ -343,6 +320,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -360,10 +338,6 @@ input[type=submit]:hover {
   width: 75%;
   margin-top: 6px;
 }
-
-
-
-
 
 
 .carousel-inner img {
@@ -384,7 +358,7 @@ input[type=submit]:hover {
   
   
   
-
+/* navigation bar */
   .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
@@ -411,13 +385,7 @@ input[type=submit]:hover {
   
   
   </style>
-
-
-
 </head>
-
-
-
 
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -426,22 +394,22 @@ input[type=submit]:hover {
 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 
 <script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
+  function scrollFunction() {
+     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+       mybutton.style.display = "block";
+   } else {
     mybutton.style.display = "none";
-  }
-}
+   }
+ }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
@@ -459,7 +427,7 @@ function topFunction() {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage"><font color="white" size="6">Healthcare</font></a>
+      <a class="navbar-brand" href="#myPage"><font color="white" size="6" style="font-family: 'Merienda', cursive;">Healthcare</font></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -472,12 +440,11 @@ function topFunction() {
         <li><a href="page6.html">FLOW CHART</a></li>
         <li><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="blank">HELPLINE NO.</a></li>
         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe-nYBiJP9U8KByuQlThuaT1TBWk78IhORmjgILjMpkopIENg/viewform?usp=sf_link" target="blank">FEEDBACK</a></li>
-        
-        
-      </ul>
+        </ul>
     </div>
   </div>
 </nav>
+
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -529,7 +496,7 @@ function topFunction() {
 <br>
 
 <div class="ex1">
-<h1 align="center"><font color="white">Flow Chart</font></h1><br>
+<h1 align="center"><font color="white" style="font-family: 'Merienda', cursive;">Flow Chart</font></h1><br>
 
 <hr>
 <h2><font color="white">The WHO declared the virus a pandemic on March 11 and said it was "deeply concerned by the alarming levels of spread and severity" of the outbreak.</font></h2>
@@ -546,20 +513,17 @@ function topFunction() {
 
  </font></h2><hr></div><br>
 
+
 <div class="ex1"><br>
   <table width="100%"><tr><td align="center">
  <img src="chart.png" width="90%" ></td></tr></table><br></div>
 
-
-
 <br>
 
 <div class="ex1"><br>
   <table width="100%"><tr><td align="center">
- <img src="p5.jpg" width="90%" ></td></tr></table><br></div>
-
-
-<br>
+ <img src="p5.jpg" width="90%" ></td></tr></table><br>
+</div><br>
 
 
 
@@ -594,9 +558,8 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-
-
 </script>
+
 
 
 <div class="ex1">
@@ -604,8 +567,12 @@ function myFunction() {
   <table width="100%" border="0">
 
     <tr><td>
-      <h2 style="font-family: verdana" align="center"><font color="white"> Government's Social Helpdesk</font></h2></td></tr></table>
-<table width="100%" border="0">
+      <h2 style="font-family: verdana" align="center"><font color="white" style="font-family: 'Merienda', cursive;"> Government's Social media Helpdesk</font></h2></td></tr></table>
+       
+       <br>
+
+       <table width="100%" border="0">
+
       <tr><th><a href="https://www.facebook.com/MyGovIndia/" class="fa fa-facebook"></a></th>
 
       <th><a href="https://twitter.com/mygovindia" class="fa fa-twitter"></a></th>
@@ -622,15 +589,17 @@ function myFunction() {
 
      <th> <a href="https://t.me/MyGovCoronaNewsdesk" class="fa fa-telegram"></a></th></tr></table>
     
-<hr>
+     <hr>
 
-</div>
+  </div>
+
 <br>
 
 
- <table width="100%" border="0"><tr><th><img src="banner.jpg" width=100%; height=500px></th></tr>
 
-</table>
+ <table width="100%" border="0"><tr><th><img src="banner.jpg" width=100%; height=500px></th></tr></table>
+
+
 
 <tr><td>
 <div class="footer">
@@ -642,14 +611,8 @@ function myFunction() {
   <h5><font color="#b3b3cc"><a href="mailto:mitrahul008@gmail.com">Arijit Mitra-mitrarahul008@gmail.com </a></font></h5>
   <h5><font color="#b3b3cc"><a href="mailto:pratimmaji2@gmail.com">Pratim Maji-pratimmaji2@gmail.com</a></font></h5>
   <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" class="next1">Next Page &raquo;</a>
-  <h3><font color="#b3b3cc">THANKS FOR VISITING OUR WEBSITE</font></h3>
+  <h3><font color="#b3b3cc" style="font-family: 'Merienda', cursive;">THANKS FOR VISITING OUR WEBSITE</font></h3>
 </div></td></tr></table>
 
+
 </body></html>
-
-
-
-
-
-
-
