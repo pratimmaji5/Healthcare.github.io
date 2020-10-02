@@ -1,1 +1,1 @@
-This is my first ropesitory for Hacktoberfest 2020
+This is my first repository for Hacktoberfest 2020
